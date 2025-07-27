@@ -60,7 +60,7 @@
   }
 
   body {
-    @apply font-geist bg-custom-white-400 text-custom-black-400 text-font-14;
+    @apply font-geist bg-custom-white-400 text-custom-black-400 text-font-14 font-light;
   }
 
   h1,
@@ -91,7 +91,7 @@
 
 @layer components {
   .wrapper {
-    @apply w-full max-w-[1296px] mx-auto px-6 md:px-12 xl:px-0 tracking-tight;
+    @apply w-full max-w-[1296px] mx-auto px-4 md:px-12 xl:px-0 tracking-tight;
   }
 
   .nav__link {
@@ -123,7 +123,7 @@
   }
 
   .custom__btn-dashboard {
-    @apply bg-custom-yellow font-normal py-2.5 px-5 rounded-xl w-fit min-w-[130px] h-10 flex items-center justify-center;
+    @apply bg-custom-yellow hover:bg-custom-yellow/80 font-normal py-2.5 px-5 rounded-xl w-fit min-w-[130px] h-10 flex items-center justify-center custom-transition;
   }
 
   .custom__btn--sm {
@@ -131,7 +131,7 @@
   }
 
   .section__heading {
-    @apply text-font-48;
+    @apply text-font-40 md:text-font-48 -tracking-[2px];
   }
 
   .card__default {
@@ -143,7 +143,7 @@
   }
 
   .operations__card--padding {
-    @apply py-10 pr-7.5 pl-16;
+    @apply p-8 md:p-7.5 lg:py-10 lg:pr-7.5 lg:pl-16;
   }
 
   .custom__badge {
@@ -176,14 +176,13 @@
 }
 
 /* Custom CSS */
-.hero__bg {
-  background-image: url("../images/hero-line-bg.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 .custom__shadow {
   box-shadow: 0px 24px 24px -10px rgba(41, 41, 41, 0.1);
+}
+
+.custom__shadow--md {
+  box-shadow: 0px 48px 48px -24px rgba(51, 51, 51, 0.04);
 }
 
 .custom__shadow--black-btn {
@@ -217,6 +216,80 @@
 
 .accordion__button--active .text-font-16 {
   font-weight: 500;
+}
+
+.custom__accodion--common .accordion__icon {
+  transition: transform 0.3s;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -webkit-transition: transform 0.3s;
+  -moz-transition: transform 0.3s;
+  -ms-transition: transform 0.3s;
+  -o-transition: transform 0.3s;
+}
+
+.custom__accodion--common .accordion__button--active .accordion__icon {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+.custom__accodion--common .accordion__button--active .text-font-16 {
+  font-weight: 400;
+}
+
+.custom__accodion--common .accordion__item {
+  border-color: rgba(224, 224, 224, 0.2);
+}
+
+.custom__accodion--common .accordion__item:last-of-type {
+  border-bottom: 1px solid rgba(224, 224, 224, 0.2);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 40px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0;
+}
+
+.swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: #2e2e2e;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+
+.swiper-pagination-bullet-active {
+  width: 28px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
 }
 
 /* Custom CSS */

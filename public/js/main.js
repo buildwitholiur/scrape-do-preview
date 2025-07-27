@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
     toggle.addEventListener("click", function (e) {
       e.stopPropagation();
 
-      // Close all other submenus
       document.querySelectorAll(".submenu").forEach((el) => {
         if (el !== submenu) el.classList.add("hidden");
       });
@@ -23,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Close all on outside click
   document.addEventListener("click", function () {
     document
       .querySelectorAll(".submenu")
@@ -44,17 +42,14 @@ document.addEventListener("DOMContentLoaded", function () {
         content.style.maxHeight = content.scrollHeight + "px";
       }
 
-      // Click handler
       button.addEventListener("click", () => {
         const isOpen = button.classList.contains("accordion__button--active");
 
-        // Close all accordion items
         buttons.forEach((btn) => {
           btn.classList.remove("accordion__button--active");
           btn.nextElementSibling.style.maxHeight = null;
         });
 
-        // Re-open current if it wasn't open before
         if (!isOpen) {
           button.classList.add("accordion__button--active");
           content.style.maxHeight = content.scrollHeight + "px";
@@ -66,4 +61,51 @@ document.addEventListener("DOMContentLoaded", function () {
   if (document.querySelector(".custom__accodion--faq")) {
     initAccordion(".custom__accodion--faq");
   }
+
+  if (document.querySelector(".custom__accodion--navbar")) {
+    initAccordion(".custom__accodion--navbar");
+  }
+
+  if (document.querySelector(".custom__accodion--footer")) {
+    initAccordion(".custom__accodion--footer");
+  }
+
+  // Challange Section Slider
+  var swiperChallange = new Swiper(".challengeSwiper", {
+    slidesPerView: 3,
+    slidesPerGroupSkip: 1,
+    spaceBetween: 24,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1.1,
+        spaceBetween: 8,
+      },
+      450: {
+        slidesPerView: 1.5,
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+    },
+  });
+
+  // Mobile Hambergur
+  const hamburgerBtn = document.querySelector(".hamburger__btn");
+  const hamburgerCloseBtn = document.querySelector(".hamburger__close-btn");
+  const mobileMenu = document.querySelector(".mobile__menu");
+
+  hamburgerBtn.addEventListener("click", () => {
+    mobileMenu.classList.remove("hidden");
+    document.body.style.overflow = "hidden";
+  });
+
+  hamburgerCloseBtn.addEventListener("click", () => {
+    mobileMenu.classList.add("hidden");
+    document.body.style.overflow = "auto";
+  });
 });

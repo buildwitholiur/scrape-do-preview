@@ -23,477 +23,956 @@
   </head>
   <body>
     <!-- Header Area -->
-    <header
-      class="absolute top-8 left-1/2 w-full max-w-[1360px] h-auto -translate-x-1/2 rounded-2xl bg-custom-white custom__shadow z-50"
-    >
-      <nav
-        class="py-4.5 px-10 rounded-2xl custom__inner-shadow h-20 flex items-center justify-between gap-12"
+    <header class="absolute top-0 xl:top-8 left-0 w-full z-40 xl:px-10">
+      <div
+        class="w-full xl:max-w-[1360px] mx-auto xl:rounded-2xl bg-custom-white custom__shadow"
       >
-        <div class="flex items-center gap-15">
-          <a href="#" class="w-[150px] h-7">
-            <img src="images/logo.svg" alt="logo" />
-          </a>
+        <nav
+          class="py-4.5 px-4 md:px-10 rounded-2xl custom__inner-shadow h-20 flex items-center justify-between gap-12"
+        >
+          <div class="flex items-center gap-15">
+            <a href="#" class="w-[150px] h-7">
+              <img src="images/logo.svg" alt="logo" />
+            </a>
 
-          <ul
-            class="flex items-center gap-4 border-l border-custom-gray-100 pl-25"
-          >
-            <li><a href="#" class="nav__link">Pricing</a></li>
-            <li><a href="#" class="nav__link">Scraping API</a></li>
-            <li class="relative nav-item">
-              <button class="nav__link submenu-toggle">
-                Features
-                <img
-                  class="w-4 h-auto transition-transform arrow-icon"
-                  src="images/arrow-down.svg"
-                  alt="arrow"
-                />
-              </button>
+            <ul
+              class="hidden xl:flex items-center gap-4 border-l border-custom-gray-100 pl-25"
+            >
+              <li><a href="#" class="nav__link">Pricing</a></li>
+              <li><a href="#" class="nav__link">Scraping API</a></li>
+              <li class="relative nav-item">
+                <button class="nav__link submenu-toggle">
+                  Features
+                  <img
+                    class="w-4 h-auto transition-transform arrow-icon"
+                    src="images/arrow-down.svg"
+                    alt="arrow"
+                  />
+                </button>
 
-              <div
-                class="submenu hidden absolute left-0 top-full mt-7 w-[637px] bg-custom-white custom__shadow rounded-3xl z-50"
-              >
-                <ul
-                  class="p-4 pr-5 rounded-3xl custom__inner-shadow grid grid-cols-2 gap-x-5.5"
+                <div
+                  class="submenu hidden absolute left-0 top-full mt-7 w-[637px] bg-custom-white custom__shadow rounded-3xl z-50"
                 >
-                  <li>
-                    <a href="#" class="sub__menu-link">
-                      <div class="flex items-center gap-3.5">
-                        <div class="sub__menu-icon">
-                          <img
-                            class="w-4"
-                            src="images/browser.svg"
-                            alt="browser"
-                          />
+                  <ul
+                    class="p-4 pr-5 rounded-3xl custom__inner-shadow grid grid-cols-2 gap-x-5.5"
+                  >
+                    <li>
+                      <a href="#" class="sub__menu-link">
+                        <div class="flex items-center gap-3.5">
+                          <div class="sub__menu-icon">
+                            <img
+                              class="w-4"
+                              src="images/browser.svg"
+                              alt="browser"
+                            />
+                          </div>
+
+                          <span class="font-normal tracking-tight"
+                            >Headless Browser</span
+                          >
                         </div>
 
-                        <span class="font-normal tracking-tight"
-                          >Headless Browser</span
-                        >
-                      </div>
+                        <img
+                          class="w-fit h-2.5"
+                          src="images/arrow-right.svg"
+                          alt="arrow-right"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="sub__menu-link">
+                        <div class="flex items-center gap-3.5">
+                          <div class="sub__menu-icon">
+                            <img
+                              class="w-4"
+                              src="images/browser.svg"
+                              alt="browser"
+                            />
+                          </div>
 
-                      <img
-                        class="w-fit h-2.5"
-                        src="images/arrow-right.svg"
-                        alt="arrow-right"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="sub__menu-link">
-                      <div class="flex items-center gap-3.5">
-                        <div class="sub__menu-icon">
-                          <img
-                            class="w-4"
-                            src="images/browser.svg"
-                            alt="browser"
-                          />
+                          <span class="font-normal tracking-tight"
+                            >Dynamic TLS Fingerprinting</span
+                          >
                         </div>
 
-                        <span class="font-normal tracking-tight"
-                          >Dynamic TLS Fingerprinting</span
-                        >
-                      </div>
+                        <img
+                          class="w-fit h-2.5"
+                          src="images/arrow-right.svg"
+                          alt="arrow-right"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="sub__menu-link">
+                        <div class="flex items-center gap-3.5">
+                          <div class="sub__menu-icon">
+                            <img
+                              class="w-4"
+                              src="images/browser.svg"
+                              alt="browser"
+                            />
+                          </div>
 
-                      <img
-                        class="w-fit h-2.5"
-                        src="images/arrow-right.svg"
-                        alt="arrow-right"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="sub__menu-link">
-                      <div class="flex items-center gap-3.5">
-                        <div class="sub__menu-icon">
-                          <img
-                            class="w-4"
-                            src="images/browser.svg"
-                            alt="browser"
-                          />
+                          <span class="font-normal tracking-tight"
+                            >Header and User Agent Rotator</span
+                          >
                         </div>
 
-                        <span class="font-normal tracking-tight"
-                          >Header and User Agent Rotator</span
-                        >
-                      </div>
+                        <img
+                          class="w-fit h-2.5"
+                          src="images/arrow-right.svg"
+                          alt="arrow-right"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="sub__menu-link">
+                        <div class="flex items-center gap-3.5">
+                          <div class="sub__menu-icon">
+                            <img
+                              class="w-4"
+                              src="images/browser.svg"
+                              alt="browser"
+                            />
+                          </div>
 
-                      <img
-                        class="w-fit h-2.5"
-                        src="images/arrow-right.svg"
-                        alt="arrow-right"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="sub__menu-link">
-                      <div class="flex items-center gap-3.5">
-                        <div class="sub__menu-icon">
-                          <img
-                            class="w-4"
-                            src="images/browser.svg"
-                            alt="browser"
-                          />
+                          <span class="font-normal tracking-tight"
+                            >Asynchronous Web Scraper</span
+                          >
                         </div>
 
-                        <span class="font-normal tracking-tight"
-                          >Asynchronous Web Scraper</span
-                        >
-                      </div>
+                        <img
+                          class="w-fit h-2.5"
+                          src="images/arrow-right.svg"
+                          alt="arrow-right"
+                        />
+                      </a>
+                    </li>
 
-                      <img
-                        class="w-fit h-2.5"
-                        src="images/arrow-right.svg"
-                        alt="arrow-right"
-                      />
-                    </a>
-                  </li>
+                    <li>
+                      <a href="#" class="sub__menu-link">
+                        <div class="flex items-center gap-3.5">
+                          <div class="sub__menu-icon">
+                            <img
+                              class="w-4"
+                              src="images/browser.svg"
+                              alt="browser"
+                            />
+                          </div>
 
-                  <li>
-                    <a href="#" class="sub__menu-link">
-                      <div class="flex items-center gap-3.5">
-                        <div class="sub__menu-icon">
-                          <img
-                            class="w-4"
-                            src="images/browser.svg"
-                            alt="browser"
-                          />
+                          <span class="font-normal tracking-tight"
+                            >Headless Browser</span
+                          >
                         </div>
 
-                        <span class="font-normal tracking-tight"
-                          >Headless Browser</span
-                        >
-                      </div>
+                        <img
+                          class="w-fit h-2.5"
+                          src="images/arrow-right.svg"
+                          alt="arrow-right"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="sub__menu-link">
+                        <div class="flex items-center gap-3.5">
+                          <div class="sub__menu-icon">
+                            <img
+                              class="w-4"
+                              src="images/browser.svg"
+                              alt="browser"
+                            />
+                          </div>
 
-                      <img
-                        class="w-fit h-2.5"
-                        src="images/arrow-right.svg"
-                        alt="arrow-right"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="sub__menu-link">
-                      <div class="flex items-center gap-3.5">
-                        <div class="sub__menu-icon">
-                          <img
-                            class="w-4"
-                            src="images/browser.svg"
-                            alt="browser"
-                          />
+                          <span class="font-normal tracking-tight"
+                            >Headless Browser</span
+                          >
                         </div>
 
-                        <span class="font-normal tracking-tight"
-                          >Headless Browser</span
-                        >
-                      </div>
+                        <img
+                          class="w-fit h-2.5"
+                          src="images/arrow-right.svg"
+                          alt="arrow-right"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="sub__menu-link">
+                        <div class="flex items-center gap-3.5">
+                          <div class="sub__menu-icon">
+                            <img
+                              class="w-4"
+                              src="images/browser.svg"
+                              alt="browser"
+                            />
+                          </div>
 
-                      <img
-                        class="w-fit h-2.5"
-                        src="images/arrow-right.svg"
-                        alt="arrow-right"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="sub__menu-link">
-                      <div class="flex items-center gap-3.5">
-                        <div class="sub__menu-icon">
-                          <img
-                            class="w-4"
-                            src="images/browser.svg"
-                            alt="browser"
-                          />
+                          <span class="font-normal tracking-tight"
+                            >Header and User Agent Rotator</span
+                          >
                         </div>
 
-                        <span class="font-normal tracking-tight"
-                          >Header and User Agent Rotator</span
-                        >
-                      </div>
+                        <img
+                          class="w-fit h-2.5"
+                          src="images/arrow-right.svg"
+                          alt="arrow-right"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="sub__menu-link">
+                        <div class="flex items-center gap-3.5">
+                          <div class="sub__menu-icon">
+                            <img
+                              class="w-4"
+                              src="images/browser.svg"
+                              alt="browser"
+                            />
+                          </div>
 
-                      <img
-                        class="w-fit h-2.5"
-                        src="images/arrow-right.svg"
-                        alt="arrow-right"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="sub__menu-link">
-                      <div class="flex items-center gap-3.5">
-                        <div class="sub__menu-icon">
-                          <img
-                            class="w-4"
-                            src="images/browser.svg"
-                            alt="browser"
-                          />
+                          <span class="font-normal tracking-tight"
+                            >Headless Browser</span
+                          >
                         </div>
 
-                        <span class="font-normal tracking-tight"
-                          >Headless Browser</span
-                        >
-                      </div>
+                        <img
+                          class="w-fit h-2.5"
+                          src="images/arrow-right.svg"
+                          alt="arrow-right"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="relative nav-item">
+                <button class="nav__link submenu-toggle">
+                  Industries
+                  <img
+                    class="w-4 h-auto transition-transform arrow-icon"
+                    src="images/arrow-down.svg"
+                    alt="arrow"
+                  />
+                </button>
 
-                      <img
-                        class="w-fit h-2.5"
-                        src="images/arrow-right.svg"
-                        alt="arrow-right"
-                      />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="relative nav-item">
-              <button class="nav__link submenu-toggle">
-                Industries
-                <img
-                  class="w-4 h-auto transition-transform arrow-icon"
-                  src="images/arrow-down.svg"
-                  alt="arrow"
-                />
-              </button>
-
-              <div
-                class="submenu hidden absolute left-0 top-full mt-7 w-[637px] bg-custom-white custom__shadow rounded-3xl z-50"
-              >
-                <ul
-                  class="p-4 pr-5 rounded-3xl custom__inner-shadow grid grid-cols-2 gap-x-5.5"
+                <div
+                  class="submenu hidden absolute left-0 top-full mt-7 w-[637px] bg-custom-white custom__shadow rounded-3xl z-50"
                 >
-                  <li>
-                    <a href="#" class="sub__menu-link">
-                      <div class="flex items-center gap-3.5">
-                        <div class="sub__menu-icon">
-                          <img
-                            class="w-4"
-                            src="images/browser.svg"
-                            alt="browser"
-                          />
+                  <ul
+                    class="p-4 pr-5 rounded-3xl custom__inner-shadow grid grid-cols-2 gap-x-5.5"
+                  >
+                    <li>
+                      <a href="#" class="sub__menu-link">
+                        <div class="flex items-center gap-3.5">
+                          <div class="sub__menu-icon">
+                            <img
+                              class="w-4"
+                              src="images/browser.svg"
+                              alt="browser"
+                            />
+                          </div>
+
+                          <span class="font-normal tracking-tight"
+                            >Headless Browser</span
+                          >
                         </div>
 
-                        <span class="font-normal tracking-tight"
-                          >Headless Browser</span
-                        >
-                      </div>
+                        <img
+                          class="w-fit h-2.5"
+                          src="images/arrow-right.svg"
+                          alt="arrow-right"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="sub__menu-link">
+                        <div class="flex items-center gap-3.5">
+                          <div class="sub__menu-icon">
+                            <img
+                              class="w-4"
+                              src="images/browser.svg"
+                              alt="browser"
+                            />
+                          </div>
 
-                      <img
-                        class="w-fit h-2.5"
-                        src="images/arrow-right.svg"
-                        alt="arrow-right"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="sub__menu-link">
-                      <div class="flex items-center gap-3.5">
-                        <div class="sub__menu-icon">
-                          <img
-                            class="w-4"
-                            src="images/browser.svg"
-                            alt="browser"
-                          />
+                          <span class="font-normal tracking-tight"
+                            >Dynamic TLS Fingerprinting</span
+                          >
                         </div>
 
-                        <span class="font-normal tracking-tight"
-                          >Dynamic TLS Fingerprinting</span
-                        >
-                      </div>
+                        <img
+                          class="w-fit h-2.5"
+                          src="images/arrow-right.svg"
+                          alt="arrow-right"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="sub__menu-link">
+                        <div class="flex items-center gap-3.5">
+                          <div class="sub__menu-icon">
+                            <img
+                              class="w-4"
+                              src="images/browser.svg"
+                              alt="browser"
+                            />
+                          </div>
 
-                      <img
-                        class="w-fit h-2.5"
-                        src="images/arrow-right.svg"
-                        alt="arrow-right"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="sub__menu-link">
-                      <div class="flex items-center gap-3.5">
-                        <div class="sub__menu-icon">
-                          <img
-                            class="w-4"
-                            src="images/browser.svg"
-                            alt="browser"
-                          />
+                          <span class="font-normal tracking-tight"
+                            >Header and User Agent Rotator</span
+                          >
                         </div>
 
-                        <span class="font-normal tracking-tight"
-                          >Header and User Agent Rotator</span
-                        >
-                      </div>
+                        <img
+                          class="w-fit h-2.5"
+                          src="images/arrow-right.svg"
+                          alt="arrow-right"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="sub__menu-link">
+                        <div class="flex items-center gap-3.5">
+                          <div class="sub__menu-icon">
+                            <img
+                              class="w-4"
+                              src="images/browser.svg"
+                              alt="browser"
+                            />
+                          </div>
 
-                      <img
-                        class="w-fit h-2.5"
-                        src="images/arrow-right.svg"
-                        alt="arrow-right"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="sub__menu-link">
-                      <div class="flex items-center gap-3.5">
-                        <div class="sub__menu-icon">
-                          <img
-                            class="w-4"
-                            src="images/browser.svg"
-                            alt="browser"
-                          />
+                          <span class="font-normal tracking-tight"
+                            >Asynchronous Web Scraper</span
+                          >
                         </div>
 
-                        <span class="font-normal tracking-tight"
-                          >Asynchronous Web Scraper</span
-                        >
-                      </div>
+                        <img
+                          class="w-fit h-2.5"
+                          src="images/arrow-right.svg"
+                          alt="arrow-right"
+                        />
+                      </a>
+                    </li>
 
-                      <img
-                        class="w-fit h-2.5"
-                        src="images/arrow-right.svg"
-                        alt="arrow-right"
-                      />
-                    </a>
-                  </li>
+                    <li>
+                      <a href="#" class="sub__menu-link">
+                        <div class="flex items-center gap-3.5">
+                          <div class="sub__menu-icon">
+                            <img
+                              class="w-4"
+                              src="images/browser.svg"
+                              alt="browser"
+                            />
+                          </div>
 
-                  <li>
-                    <a href="#" class="sub__menu-link">
-                      <div class="flex items-center gap-3.5">
-                        <div class="sub__menu-icon">
-                          <img
-                            class="w-4"
-                            src="images/browser.svg"
-                            alt="browser"
-                          />
+                          <span class="font-normal tracking-tight"
+                            >Headless Browser</span
+                          >
                         </div>
 
-                        <span class="font-normal tracking-tight"
-                          >Headless Browser</span
-                        >
-                      </div>
+                        <img
+                          class="w-fit h-2.5"
+                          src="images/arrow-right.svg"
+                          alt="arrow-right"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="sub__menu-link">
+                        <div class="flex items-center gap-3.5">
+                          <div class="sub__menu-icon">
+                            <img
+                              class="w-4"
+                              src="images/browser.svg"
+                              alt="browser"
+                            />
+                          </div>
 
-                      <img
-                        class="w-fit h-2.5"
-                        src="images/arrow-right.svg"
-                        alt="arrow-right"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="sub__menu-link">
-                      <div class="flex items-center gap-3.5">
-                        <div class="sub__menu-icon">
-                          <img
-                            class="w-4"
-                            src="images/browser.svg"
-                            alt="browser"
-                          />
+                          <span class="font-normal tracking-tight"
+                            >Headless Browser</span
+                          >
                         </div>
 
-                        <span class="font-normal tracking-tight"
-                          >Headless Browser</span
-                        >
-                      </div>
+                        <img
+                          class="w-fit h-2.5"
+                          src="images/arrow-right.svg"
+                          alt="arrow-right"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="sub__menu-link">
+                        <div class="flex items-center gap-3.5">
+                          <div class="sub__menu-icon">
+                            <img
+                              class="w-4"
+                              src="images/browser.svg"
+                              alt="browser"
+                            />
+                          </div>
 
-                      <img
-                        class="w-fit h-2.5"
-                        src="images/arrow-right.svg"
-                        alt="arrow-right"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="sub__menu-link">
-                      <div class="flex items-center gap-3.5">
-                        <div class="sub__menu-icon">
-                          <img
-                            class="w-4"
-                            src="images/browser.svg"
-                            alt="browser"
-                          />
+                          <span class="font-normal tracking-tight"
+                            >Header and User Agent Rotator</span
+                          >
                         </div>
 
-                        <span class="font-normal tracking-tight"
-                          >Header and User Agent Rotator</span
-                        >
-                      </div>
+                        <img
+                          class="w-fit h-2.5"
+                          src="images/arrow-right.svg"
+                          alt="arrow-right"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="sub__menu-link">
+                        <div class="flex items-center gap-3.5">
+                          <div class="sub__menu-icon">
+                            <img
+                              class="w-4"
+                              src="images/browser.svg"
+                              alt="browser"
+                            />
+                          </div>
 
-                      <img
-                        class="w-fit h-2.5"
-                        src="images/arrow-right.svg"
-                        alt="arrow-right"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="sub__menu-link">
-                      <div class="flex items-center gap-3.5">
-                        <div class="sub__menu-icon">
-                          <img
-                            class="w-4"
-                            src="images/browser.svg"
-                            alt="browser"
-                          />
+                          <span class="font-normal tracking-tight"
+                            >Headless Browser</span
+                          >
                         </div>
 
-                        <span class="font-normal tracking-tight"
-                          >Headless Browser</span
-                        >
-                      </div>
+                        <img
+                          class="w-fit h-2.5"
+                          src="images/arrow-right.svg"
+                          alt="arrow-right"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="relative nav-item">
+                <button class="nav__link submenu-toggle">
+                  Company
+                  <img
+                    class="w-4 h-auto transition-transform arrow-icon"
+                    src="images/arrow-down.svg"
+                    alt="arrow"
+                  />
+                </button>
 
-                      <img
-                        class="w-fit h-2.5"
-                        src="images/arrow-right.svg"
-                        alt="arrow-right"
-                      />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li><a href="#" class="nav__link">Company</a></li>
-            <li><a href="#" class="nav__link">Blog</a></li>
-          </ul>
-        </div>
+                <div
+                  class="submenu hidden absolute left-0 top-full mt-7 w-[637px] bg-custom-white custom__shadow rounded-3xl z-50"
+                >
+                  <ul
+                    class="p-4 pr-5 rounded-3xl custom__inner-shadow grid grid-cols-2 gap-x-5.5"
+                  >
+                    <li>
+                      <a href="#" class="sub__menu-link">
+                        <div class="flex items-center gap-3.5">
+                          <div class="sub__menu-icon">
+                            <img
+                              class="w-4"
+                              src="images/browser.svg"
+                              alt="browser"
+                            />
+                          </div>
 
-        <div class="flex items-center gap-10">
-          <button class="w-5 h-5">
-            <img src="images/search.svg" alt="search" />
-          </button>
+                          <span class="font-normal tracking-tight"
+                            >Headless Browser</span
+                          >
+                        </div>
 
-          <a href="#" class="custom__btn-dashboard">Dashboard</a>
-        </div>
-      </nav>
+                        <img
+                          class="w-fit h-2.5"
+                          src="images/arrow-right.svg"
+                          alt="arrow-right"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="sub__menu-link">
+                        <div class="flex items-center gap-3.5">
+                          <div class="sub__menu-icon">
+                            <img
+                              class="w-4"
+                              src="images/browser.svg"
+                              alt="browser"
+                            />
+                          </div>
+
+                          <span class="font-normal tracking-tight"
+                            >Dynamic TLS Fingerprinting</span
+                          >
+                        </div>
+
+                        <img
+                          class="w-fit h-2.5"
+                          src="images/arrow-right.svg"
+                          alt="arrow-right"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="sub__menu-link">
+                        <div class="flex items-center gap-3.5">
+                          <div class="sub__menu-icon">
+                            <img
+                              class="w-4"
+                              src="images/browser.svg"
+                              alt="browser"
+                            />
+                          </div>
+
+                          <span class="font-normal tracking-tight"
+                            >Header and User Agent Rotator</span
+                          >
+                        </div>
+
+                        <img
+                          class="w-fit h-2.5"
+                          src="images/arrow-right.svg"
+                          alt="arrow-right"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="sub__menu-link">
+                        <div class="flex items-center gap-3.5">
+                          <div class="sub__menu-icon">
+                            <img
+                              class="w-4"
+                              src="images/browser.svg"
+                              alt="browser"
+                            />
+                          </div>
+
+                          <span class="font-normal tracking-tight"
+                            >Asynchronous Web Scraper</span
+                          >
+                        </div>
+
+                        <img
+                          class="w-fit h-2.5"
+                          src="images/arrow-right.svg"
+                          alt="arrow-right"
+                        />
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="sub__menu-link">
+                        <div class="flex items-center gap-3.5">
+                          <div class="sub__menu-icon">
+                            <img
+                              class="w-4"
+                              src="images/browser.svg"
+                              alt="browser"
+                            />
+                          </div>
+
+                          <span class="font-normal tracking-tight"
+                            >Headless Browser</span
+                          >
+                        </div>
+
+                        <img
+                          class="w-fit h-2.5"
+                          src="images/arrow-right.svg"
+                          alt="arrow-right"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="sub__menu-link">
+                        <div class="flex items-center gap-3.5">
+                          <div class="sub__menu-icon">
+                            <img
+                              class="w-4"
+                              src="images/browser.svg"
+                              alt="browser"
+                            />
+                          </div>
+
+                          <span class="font-normal tracking-tight"
+                            >Headless Browser</span
+                          >
+                        </div>
+
+                        <img
+                          class="w-fit h-2.5"
+                          src="images/arrow-right.svg"
+                          alt="arrow-right"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="sub__menu-link">
+                        <div class="flex items-center gap-3.5">
+                          <div class="sub__menu-icon">
+                            <img
+                              class="w-4"
+                              src="images/browser.svg"
+                              alt="browser"
+                            />
+                          </div>
+
+                          <span class="font-normal tracking-tight"
+                            >Header and User Agent Rotator</span
+                          >
+                        </div>
+
+                        <img
+                          class="w-fit h-2.5"
+                          src="images/arrow-right.svg"
+                          alt="arrow-right"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="sub__menu-link">
+                        <div class="flex items-center gap-3.5">
+                          <div class="sub__menu-icon">
+                            <img
+                              class="w-4"
+                              src="images/browser.svg"
+                              alt="browser"
+                            />
+                          </div>
+
+                          <span class="font-normal tracking-tight"
+                            >Headless Browser</span
+                          >
+                        </div>
+
+                        <img
+                          class="w-fit h-2.5"
+                          src="images/arrow-right.svg"
+                          alt="arrow-right"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#" class="nav__link">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="flex items-center gap-6 xl:gap-10">
+            <button class="w-5 h-5">
+              <img src="images/search.svg" alt="search" />
+            </button>
+
+            <button class="hamburger__btn w-6 h-auto">
+              <img src="images/menu.svg" alt="menu" />
+            </button>
+
+            <a href="#" class="custom__btn-dashboard hidden xl:flex"
+              >Dashboard</a
+            >
+          </div>
+        </nav>
+      </div>
     </header>
     <!-- Header Area -->
+
+    <!-- Mobile Menu -->
+    <div
+      class="mobile__menu fixed top-0 left-0 w-full h-screen z-50 bg-custom-black-400/97 overflow-auto hidden xl:hidden pb-16"
+    >
+      <nav class="py-6.5 px-4 md:px-10">
+        <div class="flex items-center justify-between gap-12">
+          <a href="#" class="w-[150px] h-7">
+            <img src="images/logo-light.svg" alt="logo light" />
+          </a>
+
+          <button class="hamburger__close-btn w-6 h-6">
+            <img src="images/close.svg" alt="close" />
+          </button>
+        </div>
+
+        <!-- Only Mobile Accordions -->
+        <div
+          class="custom__accodion custom__accodion--common custom__accodion--navbar mt-10 md:mt-12"
+        >
+          <!-- Accordion Item -->
+          <div class="accordion__item">
+            <a href="#" class="text-custom-white text-font-16 font-normal"
+              >Pricing</a
+            >
+          </div>
+          <!-- Accordion Item -->
+
+          <!-- Accordion Item -->
+          <div class="accordion__item">
+            <a href="#" class="text-custom-white text-font-16 font-normal"
+              >Scraping API</a
+            >
+          </div>
+          <!-- Accordion Item -->
+
+          <!-- Accordion Item -->
+          <div class="accordion__item">
+            <button class="accordion__button text-custom-white">
+              <span class="text-font-16 font-normal">Features</span>
+
+              <div class="accordion__icon">
+                <img src="images/accordion-arrow.svg" alt="arrow" />
+              </div>
+            </button>
+
+            <div class="accordion__content">
+              <div class="space-y-4 pt-4">
+                <ul class="space-y-3.5">
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline"
+                      >Anti-Bot Bypass</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline"
+                      >Headless Browser</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline"
+                      >CAPTCHA Handling</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline"
+                      >Header and User Agent Rotator</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline"
+                      >Dynamic TLS Fingerprinting</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline"
+                      >Asynchronous Web Scraper</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline"
+                      >Automatic Proxy Rotation</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline"
+                      >Geo-Targeting</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Accordion Item -->
+
+          <!-- Accordion Item -->
+          <div class="accordion__item">
+            <button class="accordion__button text-custom-white">
+              <span class="text-font-16 font-normal">Industries</span>
+
+              <div class="accordion__icon">
+                <img src="images/accordion-arrow.svg" alt="arrow" />
+              </div>
+            </button>
+
+            <div class="accordion__content">
+              <div class="space-y-4 pt-4">
+                <ul class="space-y-3.5">
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline"
+                      >Anti-Bot Bypass</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline"
+                      >Headless Browser</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline"
+                      >CAPTCHA Handling</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline"
+                      >Header and User Agent Rotator</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline"
+                      >Dynamic TLS Fingerprinting</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline"
+                      >Asynchronous Web Scraper</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline"
+                      >Automatic Proxy Rotation</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline"
+                      >Geo-Targeting</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Accordion Item -->
+
+          <!-- Accordion Item -->
+          <div class="accordion__item">
+            <button class="accordion__button text-custom-white">
+              <span class="text-font-16 font-normal">Company</span>
+
+              <div class="accordion__icon">
+                <img src="images/accordion-arrow.svg" alt="arrow" />
+              </div>
+            </button>
+
+            <div class="accordion__content">
+              <div class="space-y-4 pt-4">
+                <ul class="space-y-3.5">
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline"
+                      >Anti-Bot Bypass</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline"
+                      >Headless Browser</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline"
+                      >CAPTCHA Handling</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline"
+                      >Header and User Agent Rotator</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline"
+                      >Dynamic TLS Fingerprinting</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline"
+                      >Asynchronous Web Scraper</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline"
+                      >Automatic Proxy Rotation</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline"
+                      >Geo-Targeting</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Accordion Item -->
+
+          <!-- Accordion Item -->
+          <div class="accordion__item">
+            <a href="#" class="text-custom-white text-font-16 font-normal"
+              >Blog</a
+            >
+          </div>
+          <!-- Accordion Item -->
+        </div>
+        <!-- Only Mobile Accordions -->
+
+        <div
+          class="flex items-center justify-between xl:justify-start gap-8 mt-6"
+        >
+          <a href="#" class="w-16">
+            <img src="images/footer-logo.svg" alt="footer logo" />
+          </a>
+
+          <ul class="flex items-center gap-4">
+            <li>
+              <a
+                href="#"
+                class="w-10 h-10 border border-custom-gray-100 rounded-full flex items-center justify-center"
+              >
+                <img class="w-4" src="images/x-twitter.svg" alt="x twitter" />
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="w-10 h-10 border border-custom-gray-100 rounded-full flex items-center justify-center"
+              >
+                <img class="w-4" src="images/linkedin.svg" alt="linkedin" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- Mobile Menu -->
 
     <!-- Main content -->
     <main>
       <!-- Hero Area -->
       <section class="overflow-hidden">
-        <div class="hero__bg w-full h-[640px]">
+        <div class="relative w-full md:min-h-[640px]">
+          <div class="absolute top-0 left-0 w-full h-[637px] md:h-full">
+            <img
+              class="object-cover hidden md:block"
+              src="images/hero-line-bg.svg"
+              alt="line"
+            />
+            <img
+              class="object-cover md:hidden"
+              src="images/hero-line-bg-mobile.svg"
+              alt="line"
+            />
+          </div>
+
           <div class="wrapper">
-            <div class="w-full max-w-[666px] mx-auto relative pt-[160px]">
+            <div
+              class="w-full max-w-[666px] mx-auto relative pt-28 md:pt-[160px]"
+            >
               <div
-                class="absolute top-[60%] left-1/2 -translate-y-1/2 -translate-x-1/2 w-[578px] h-[578px] rounded-full bg-custom-white/70 blur-[94px] z-10"
+                class="hidden md:block absolute top-[60%] left-1/2 -translate-y-1/2 -translate-x-1/2 w-[578px] h-[578px] rounded-full bg-custom-white/70 blur-[94px] z-10"
               ></div>
 
               <div class="relative z-20">
                 <!-- Hero Client -->
-                <ul class="flex items-center justify-center gap-6">
+                <ul class="flex items-center justify-center gap-3 md:gap-6">
                   <li>
                     <img
-                      class="w-[76px] h-10.5"
+                      class="w-[69px] h-[38px] md:w-[76px] md:h-10.5"
                       src="images/hero-client-1.svg"
                       alt=""
                     />
                   </li>
                   <li>
                     <img
-                      class="w-[116px] h-[29px]"
+                      class="w-[105px] h-[26px] md:w-[116px] md:h-[29px]"
                       src="images/hero-client-2.svg"
                       alt=""
                     />
                   </li>
                   <li>
                     <img
-                      class="w-[85px] h-7"
+                      class="w-[77px] h-[25px] md:w-[85px] md:h-7"
                       src="images/hero-client-3.svg"
                       alt=""
                     />
@@ -502,30 +981,37 @@
                 <!-- Hero Client -->
 
                 <h1
-                  class="text-font-56 font-semibold text-center tracking-tighter mt-7"
+                  class="text-font-40 leading-12 md:text-font-56 md:leading-16 font-semibold text-center tracking-tighter mt-4 md:mt-7"
                 >
                   Reliable, Scalable,<br />
-                  <span class="relative"
-                    >Unstoppable
-                    <img
-                      class="absolute top-[90%] right-5 w-[178px] h-4.5"
-                      src="images/hero-title-line.svg"
-                      alt="hero title line"
-                  /></span>
-                  Web Scraping
+                  <span class="leading-15 md:leading-16">
+                    <span class="relative"
+                      >Unstoppable
+                      <img
+                        class="absolute top-[90%] right-5 w-[178px] h-4.5"
+                        src="images/hero-title-line.svg"
+                        alt="hero title line"
+                    /></span>
+                    Web Scraping
+                  </span>
                 </h1>
 
-                <p class="text-font-16 text-center mt-9">
+                <p class="text-font-16 text-center mt-2 md:mt-9">
                   Scrape.do is the ultimate toolkit for collecting public data
                   at scale. <span class="font-semibold">Unmatched</span> speed,
                   <span class="font-semibold">unbeatable</span> prices,
                   <span class="font-semibold">unblocked</span> access.
                 </p>
 
-                <div class="flex items-center justify-center gap-4 mt-5.5">
-                  <a href="#" class="custom__btn custom__shadow--black-btn">
+                <div
+                  class="flex flex-col md:flex-row md:items-center md:justify-center gap-4 mt-5.5"
+                >
+                  <a
+                    href="#"
+                    class="custom__btn custom__shadow--black-btn w-full md:w-fit"
+                  >
                     START SCRAPING FOR FREE
-                    <span class="custom__btn-icon">
+                    <span class="custom__btn-icon hidden md:flex">
                       <svg
                         class="w-[29px] h-[29px] text-inherit"
                         viewBox="0 0 29 29"
@@ -542,10 +1028,10 @@
 
                   <a
                     href="#"
-                    class="custom__btn custom__btn--white custom__shadow--white-btn"
+                    class="custom__btn custom__btn--white custom__shadow--white-btn w-full md:w-fit"
                   >
                     TALK TO AN EXPERT
-                    <span class="custom__btn-icon">
+                    <span class="custom__btn-icon hidden md:flex">
                       <svg
                         class="w-[29px] h-[29px] text-inherit"
                         viewBox="0 0 29 29"
@@ -571,7 +1057,7 @@
           </div>
         </div>
 
-        <div class="flex items-center gap-22.5">
+        <div class="flex items-center gap-8 md:gap-22.5 mt-10 md:mt-3">
           <img class="w-fit h-7" src="images/revolut.svg" alt="client" />
 
           <img class="w-fit h-7" src="images/zeo.svg" alt="client" />
@@ -598,26 +1084,27 @@
       <!-- Hero Area -->
 
       <!-- Operations Area -->
-      <section class="py-26">
+      <section class="pt-14 pb-8 md:py-26">
         <div class="wrapper">
           <!-- Section Heading Area -->
-          <div class="w-full max-w-[780px] mx-auto text-center">
+          <div class="w-full max-w-[776px] mx-auto text-center">
             <h2 class="section__heading">
-              From bypassing WAFs to seamlessly scaling your operations
+              From bypassing WAFs
+              <span class="block">to seamlessly scaling your operations</span>
             </h2>
 
-            <p class="text-font-16 mt-6">
+            <p class="text-font-16 mt-6 max-w-[300px] mx-auto lg:max-w-full">
               All the tools you need to scrape the web with efficiency.
             </p>
           </div>
           <!-- Section Heading Area -->
 
-          <div class="grid grid-cols-2 gap-6 mt-14">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-10 md:mt-14">
             <!-- Web Scraping API -->
             <div
-              class="card__outline operations__card--padding col-span-2 flex items-center gap-17.5"
+              class="card__outline p-8 px-3.5 md:p-7.5 lg:py-10 lg:pr-7.5 lg:pl-16 lg:col-span-2 flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-17.5"
             >
-              <div class="flex-1">
+              <div class="w-full lg:max-w-[306px] pl-4.5 md:pl-0">
                 <div
                   class="w-14 h-14 rounded border border-custom-gray-100 flex items-center justify-center mb-7"
                 >
@@ -629,7 +1116,7 @@
 
                 <h3 class="text-font-24 font-normal">Web Scraping API</h3>
 
-                <p class="mt-4 max-w-[290px]">
+                <p class="mt-4 lg:max-w-[290px]">
                   Effortlessly retrieve data with a single request. We handle
                   proxies, headers, CAPTCHAs, and more to ensure a 99.98%
                   success rate.
@@ -677,7 +1164,7 @@
                 </a>
               </div>
 
-              <div class="w-full max-w-[826px]">
+              <div class="flex-1">
                 <img src="images/web-scraping.svg" alt="web scraping" />
               </div>
             </div>
@@ -685,7 +1172,7 @@
 
             <!-- Proxies -->
             <div
-              class="card__outline operations__card--padding flex items-center gap-17.5"
+              class="card__outline operations__card--padding flex items-center gap-17.5 relative"
             >
               <div class="flex-1">
                 <div
@@ -697,12 +1184,12 @@
                   </div>
                 </div>
 
-                <div class="relative w-fit">
+                <div class="md:relative w-fit">
                   <h3 class="text-font-24 font-normal">Proxies</h3>
 
                   <!-- Label -->
                   <div
-                    class="custom__badge w-[124px] absolute top-[25%] left-full -translate-y-1/2 ml-2 -rotate-[4deg]"
+                    class="custom__badge w-[124px] absolute top-7 right-7 md:top-[25%] md:left-full md:-translate-y-1/2 md:ml-2 -rotate-[4deg]"
                   >
                     <img class="w-6" src="images/thunder.svg" alt="thunder" />
                     <p class="text-font-13 font-normal">Coming Soon</p>
@@ -735,7 +1222,7 @@
 
             <!-- Scraping Browser -->
             <div
-              class="card__outline operations__card--padding flex items-center gap-17.5"
+              class="card__outline operations__card--padding flex items-center gap-17.5 relative"
             >
               <div class="flex-1">
                 <div
@@ -747,12 +1234,12 @@
                   </div>
                 </div>
 
-                <div class="relative w-fit">
+                <div class="md:relative w-fit">
                   <h3 class="text-font-24 font-normal">Scraping Browser</h3>
 
                   <!-- Label -->
                   <div
-                    class="custom__badge w-[124px] absolute top-[25%] left-full -translate-y-1/2 ml-2 -rotate-[4deg]"
+                    class="custom__badge w-[124px] absolute top-7 right-7 md:top-[25%] md:left-full md:-translate-y-1/2 md:ml-2 -rotate-[4deg]"
                   >
                     <img class="w-6" src="images/thunder.svg" alt="thunder" />
                     <p class="text-font-13 font-normal">Coming Soon</p>
@@ -784,9 +1271,9 @@
             <!-- Scraping Browser -->
           </div>
 
-          <div class="flex gap-4 mt-20">
+          <div class="flex flex-col lg:flex-row gap-4 mt-10 lg:mt-20">
             <div
-              class="card__outline flex-1 flex items-center justify-center p-10"
+              class="card__outline flex-1 flex md:items-center lg:justify-center p-8 pr-7 md:p-10 min-h-[270px]"
             >
               <div class="w-full max-w-[433px]">
                 <p class="font-inter text-font-16 italic">
@@ -812,11 +1299,15 @@
               </div>
             </div>
 
-            <div class="w-full max-w-[330px] space-y-4">
+            <div
+              class="w-full lg:max-w-[330px] flex flex-row lg:flex-col gap-4"
+            >
               <!-- Response Time -->
-              <div class="card__outline pt-5.5 pr-3.5 pb-7.5 pl-8">
+              <div
+                class="card__outline p-6 pl-4 md:pt-5.5 md:pr-3.5 md:pb-7.5 md:pl-8 flex-1 lg:flex-none"
+              >
                 <div class="flex items-center justify-between">
-                  <img class="w-8" src="images/timer.svg" alt="timer" />
+                  <img class="w-8 h-auto" src="images/timer.svg" alt="timer" />
 
                   <img
                     class="w-[91px]"
@@ -838,9 +1329,11 @@
               <!-- Response Time -->
 
               <!-- Success Rate -->
-              <div class="card__outline py-6 px-8">
+              <div
+                class="card__outline p-6 pl-4 md:py-6 md:px-8 hidden lg:block"
+              >
                 <img
-                  class="w-8"
+                  class="w-8 h-auto"
                   src="images/like-change.svg"
                   alt="like change"
                 />
@@ -856,10 +1349,60 @@
               <!-- Success Rate -->
             </div>
 
-            <div class="w-full max-w-[290px] space-y-4">
+            <div class="flex gap-4 lg:hidden">
+              <!-- Success Rate -->
+              <div class="card__outline p-6 px-4 md:py-6 md:px-8 flex-1">
+                <img
+                  class="w-8 h-auto"
+                  src="images/like-change.svg"
+                  alt="like change"
+                />
+
+                <h3
+                  class="text-font-32 font-normal -tracking-[2px] md:tracking-tight mt-4.5"
+                >
+                  99.98%
+                </h3>
+
+                <div class="space-y-1.5 mt-1">
+                  <p class="text-font-16">Success rate</p>
+                </div>
+              </div>
+              <!-- Success Rate -->
+
               <!-- Stat Proxies -->
-              <div class="card__outline py-6 px-8">
-                <img class="w-8" src="images/hierarchy.svg" alt="hierarchy" />
+              <div class="card__outline p-6 px-4 md:py-6 md:px-8 flex-1">
+                <img
+                  class="w-8 h-auto"
+                  src="images/hierarchy.svg"
+                  alt="hierarchy"
+                />
+
+                <h3
+                  class="text-font-32 font-normal -tracking-[2px] md:tracking-tight mt-4.5"
+                >
+                  110 Million
+                </h3>
+
+                <div class="space-y-1.5 mt-1">
+                  <p class="text-font-16">Proxies</p>
+                </div>
+              </div>
+              <!-- Stat Proxies -->
+            </div>
+
+            <div
+              class="w-full lg:max-w-[290px] flex flex-row lg:flex-col gap-4"
+            >
+              <!-- Stat Proxies -->
+              <div
+                class="card__outline p-6 pl-4 md:py-6 md:px-8 hidden lg:block"
+              >
+                <img
+                  class="w-8 h-auto"
+                  src="images/hierarchy.svg"
+                  alt="hierarchy"
+                />
 
                 <h3 class="text-font-32 font-normal tracking-tight mt-4.5">
                   110 Million
@@ -872,8 +1415,10 @@
               <!-- Stat Proxies -->
 
               <!-- Competitor -->
-              <div class="card__outline py-[49px] px-8 h-auto">
-                <img class="w-8" src="images/trello.svg" alt="trello" />
+              <div
+                class="card__outline p-6 pl-4 md:py-[49px] md:px-8 h-auto flex-1 lg:flex-none"
+              >
+                <img class="w-8 h-auto" src="images/trello.svg" alt="trello" />
 
                 <h3 class="text-font-32 font-normal tracking-tight mt-4.5">
                   +40%
@@ -893,92 +1438,126 @@
       <!-- Operations Area -->
 
       <!-- Competitive Data Area -->
-      <section class="bg-custom-white py-26 rounded-[56px]">
+      <section
+        class="bg-custom-white py-14 md:py-26 rounded-[32px] md:rounded-[56px]"
+      >
         <div class="wrapper">
           <!-- Section Heading Area -->
-          <div class="w-full max-w-[780px] mx-auto text-center">
+          <div class="w-full max-w-[665px] mx-auto text-center">
             <h2 class="section__heading">
               Industry leaders trust Scrape.do for competitive data
             </h2>
           </div>
           <!-- Section Heading Area -->
 
-          <div class="relative mt-15">
+          <div class="relative mt-4 md:mt-10 xl:mt-15">
             <img
-              class="absolute top-0 left-0 w-full h-full z-10"
+              class="absolute top-0 left-0 w-full h-full z-10 hidden lg:block"
               src="images/competitive-data-lines.png"
               alt="competitive data lines"
             />
 
-            <div class="grid grid-cols-4 relative z-20">
+            <div class="grid grid-cols-1 lg:grid-cols-4 relative z-20">
               <!-- Single Item -->
-              <div class="min-h-50 flex items-end justify-center p-11.5">
-                <div class="text-center w-fit">
+              <div
+                class="lg:min-h-40 xl:min-h-50 flex lg:items-end lg:justify-center py-4 md:py-6 px-0 lg:p-6 xl:p-11.5 border-b border-custom-gray-100 lg:border-b-0"
+              >
+                <div
+                  class="text-center w-fit flex flex-row lg:flex-col items-center gap-6 lg:gap-2"
+                >
                   <img class="w-10 mx-auto" src="images/cart.svg" alt="cart" />
-                  <h3 class="text-font-16 font-normal mt-2">E-Commerce</h3>
+                  <h3 class="text-font-16 font-normal">E-Commerce</h3>
                 </div>
               </div>
               <!-- Single Item -->
 
               <!-- Single Item -->
-              <div class="min-h-50 flex items-end justify-center p-11.5">
-                <div class="text-center w-fit">
+              <div
+                class="lg:min-h-40 xl:min-h-50 flex lg:items-end lg:justify-center py-4 md:py-6 px-0 lg:p-6 xl:p-11.5 border-b border-custom-gray-100 lg:border-b-0"
+              >
+                <div
+                  class="text-center w-fit flex flex-row lg:flex-col items-center gap-6 lg:gap-2"
+                >
                   <img class="w-10 mx-auto" src="images/cart.svg" alt="cart" />
-                  <h3 class="text-font-16 font-normal mt-2">E-Commerce</h3>
+                  <h3 class="text-font-16 font-normal">E-Commerce</h3>
                 </div>
               </div>
               <!-- Single Item -->
 
               <!-- Single Item -->
-              <div class="min-h-50 flex items-end justify-center p-11.5">
-                <div class="text-center w-fit">
+              <div
+                class="lg:min-h-40 xl:min-h-50 flex lg:items-end lg:justify-center py-4 md:py-6 px-0 lg:p-6 xl:p-11.5 border-b border-custom-gray-100 lg:border-b-0"
+              >
+                <div
+                  class="text-center w-fit flex flex-row lg:flex-col items-center gap-6 lg:gap-2"
+                >
                   <img class="w-10 mx-auto" src="images/cart.svg" alt="cart" />
-                  <h3 class="text-font-16 font-normal mt-2">E-Commerce</h3>
+                  <h3 class="text-font-16 font-normal">E-Commerce</h3>
                 </div>
               </div>
               <!-- Single Item -->
 
               <!-- Single Item -->
-              <div class="min-h-50 flex items-end justify-center p-11.5">
-                <div class="text-center w-fit">
+              <div
+                class="lg:min-h-40 xl:min-h-50 flex lg:items-end lg:justify-center py-4 md:py-6 px-0 lg:p-6 xl:p-11.5 border-b border-custom-gray-100 lg:border-b-0"
+              >
+                <div
+                  class="text-center w-fit flex flex-row lg:flex-col items-center gap-6 lg:gap-2"
+                >
                   <img class="w-10 mx-auto" src="images/cart.svg" alt="cart" />
-                  <h3 class="text-font-16 font-normal mt-2">E-Commerce</h3>
+                  <h3 class="text-font-16 font-normal">E-Commerce</h3>
                 </div>
               </div>
               <!-- Single Item -->
 
               <!-- Single Item -->
-              <div class="min-h-50 flex items-start justify-center p-10">
-                <div class="text-center w-fit">
+              <div
+                class="lg:min-h-40 xl:min-h-50 flex lg:items-start lg:justify-center py-4 md:py-6 px-0 lg:p-6 xl:p-10 border-b border-custom-gray-100 lg:border-b-0"
+              >
+                <div
+                  class="text-center w-fit flex flex-row lg:flex-col items-center gap-6 lg:gap-2"
+                >
                   <img class="w-10 mx-auto" src="images/cart.svg" alt="cart" />
-                  <h3 class="text-font-16 font-normal mt-2">E-Commerce</h3>
+                  <h3 class="text-font-16 font-normal">E-Commerce</h3>
                 </div>
               </div>
               <!-- Single Item -->
 
               <!-- Single Item -->
-              <div class="min-h-50 flex items-start justify-center p-10">
-                <div class="text-center w-fit">
+              <div
+                class="lg:min-h-40 xl:min-h-50 flex lg:items-start lg:justify-center py-4 md:py-6 px-0 lg:p-6 xl:p-10 border-b border-custom-gray-100 lg:border-b-0"
+              >
+                <div
+                  class="text-center w-fit flex flex-row lg:flex-col items-center gap-6 lg:gap-2"
+                >
                   <img class="w-10 mx-auto" src="images/cart.svg" alt="cart" />
-                  <h3 class="text-font-16 font-normal mt-2">E-Commerce</h3>
+                  <h3 class="text-font-16 font-normal">E-Commerce</h3>
                 </div>
               </div>
               <!-- Single Item -->
 
               <!-- Single Item -->
-              <div class="min-h-50 flex items-start justify-center p-10">
-                <div class="text-center w-fit">
+              <div
+                class="lg:min-h-40 xl:min-h-50 flex lg:items-start lg:justify-center py-4 md:py-6 px-0 lg:p-6 xl:p-10 border-b border-custom-gray-100 lg:border-b-0"
+              >
+                <div
+                  class="text-center w-fit flex flex-row lg:flex-col items-center gap-6 lg:gap-2"
+                >
                   <img class="w-10 mx-auto" src="images/cart.svg" alt="cart" />
-                  <h3 class="text-font-16 font-normal mt-2">E-Commerce</h3>
+                  <h3 class="text-font-16 font-normal">E-Commerce</h3>
                 </div>
               </div>
               <!-- Single Item -->
 
               <!-- Single Item -->
-              <div class="min-h-50 flex items-start justify-center p-10">
-                <div class="text-center w-fit">
+              <div
+                class="lg:min-h-40 xl:min-h-50 flex lg:items-start lg:justify-center py-4 md:py-6 px-0 lg:p-6 xl:p-10 border-b border-custom-gray-100 lg:border-b-0"
+              >
+                <div
+                  class="text-center w-fit flex flex-row lg:flex-col items-center gap-6 lg:gap-2"
+                >
                   <img class="w-10 mx-auto" src="images/cart.svg" alt="cart" />
-                  <h3 class="text-font-16 font-normal mt-2">E-Commerce</h3>
+                  <h3 class="text-font-16 font-normal">E-Commerce</h3>
                 </div>
               </div>
               <!-- Single Item -->
@@ -989,9 +1568,9 @@
       <!-- Competitive Data Area -->
 
       <!-- Web Scraping CTA Area -->
-      <section class="pt-25 pb-10">
+      <section class="pt-12 pb-14 md:pt-25 md:pb-10">
         <div class="wrapper">
-          <div class="card__outline pt-18 pb-22">
+          <div class="card__outline border-0 md:border md:pt-18 md:pb-22">
             <div class="w-full max-w-[610px] mx-auto text-center">
               <h2 class="section__heading tracking-tight">
                 Reliable, Scalable,<span class="block"
@@ -999,10 +1578,12 @@
                 >
               </h2>
 
-              <div class="flex items-center justify-center gap-6 mt-6">
-                <a href="#" class="custom__btn">
+              <div
+                class="flex flex-col md:flex-row md:items-center md:justify-center gap-4 md:gap-6 mt-6"
+              >
+                <a href="#" class="custom__btn w-full md:w-fit">
                   START SCRAPING FOR FREE
-                  <span class="custom__btn-icon">
+                  <span class="custom__btn-icon hidden md:flex">
                     <svg
                       class="w-[16px] h-[10px] text-inherit"
                       viewBox="0 0 16 12"
@@ -1019,10 +1600,10 @@
 
                 <a
                   href="#"
-                  class="custom__btn custom__btn--white custom__btn--outline"
+                  class="custom__btn custom__btn--white custom__btn--outline w-full md:w-fit"
                 >
                   TALK TO AN EXPERT
-                  <span class="custom__btn-icon">
+                  <span class="custom__btn-icon hidden md:flex">
                     <svg
                       class="w-[16px] h-[10px] text-inherit"
                       viewBox="0 0 16 12"
@@ -1043,21 +1624,126 @@
       </section>
       <!-- Web Scraping CTA Area -->
 
+      <!-- Challenge Area -->
+      <section class="">
+        <div class="wrapper relative md:pt-12 lg:pt-[112px]">
+          <img
+            class="absolute top-0 left-0 w-full h-auto z-10 hidden lg:block"
+            src="images/challenge-grid.svg"
+            alt="grid"
+          />
+
+          <div class="relative z-20">
+            <!-- Section Heading Area -->
+            <div class="w-full max-w-[780px] mx-auto text-center">
+              <h2 class="section__heading">
+                Web scraping is a challenge in 2025
+              </h2>
+            </div>
+            <!-- Section Heading Area -->
+
+            <div class="swiper challengeSwiper mt-12">
+              <div class="swiper-wrapper pb-20">
+                <!-- Single Slide -->
+                <div class="swiper-slide">
+                  <div
+                    class="bg-custom-white rounded-[18px] p-8 md:p-12 min-h-[477px] custom__shadow--md overflow-hidden relative"
+                  >
+                    <img
+                      class="absolute bottom-0 right-0 w-fit h-auto xl:h-[421px] z-10"
+                      src="images/challenge-object-1.svg"
+                      alt="challenge"
+                    />
+
+                    <div class="relative z-20">
+                      <h3 class="text-font-24 font-normal max-w-[185px]">
+                        Blocked at Every Turn
+                      </h3>
+
+                      <p class="mt-3 max-w-[298px]">
+                        Anti-bot systems and constant WAF updates make accessing
+                        data feel impossible.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single Slide -->
+
+                <!-- Single Slide -->
+                <div class="swiper-slide">
+                  <div
+                    class="bg-custom-white rounded-[18px] p-8 md:p-12 min-h-[477px] custom__shadow--md overflow-hidden relative"
+                  >
+                    <img
+                      class="absolute bottom-0 right-0 w-full h-auto z-10"
+                      src="images/challenge-object-2.svg"
+                      alt="challenge"
+                    />
+
+                    <div class="relative z-20">
+                      <h3 class="text-font-24 font-normal max-w-[185px]">
+                        Scaling is a Nightmare
+                      </h3>
+
+                      <p class="mt-3 max-w-[298px]">
+                        Managing proxies, headers, and retries is overwhelming
+                        for a handful of requests, let alone millions.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single Slide -->
+
+                <!-- Single Slide -->
+                <div class="swiper-slide">
+                  <div
+                    class="bg-custom-white rounded-[18px] p-8 md:p-12 min-h-[477px] custom__shadow--md overflow-hidden relative"
+                  >
+                    <img
+                      class="absolute bottom-0 right-0 w-full h-auto z-10"
+                      src="images/challenge-object-3.svg"
+                      alt="challenge"
+                    />
+
+                    <div class="relative z-20">
+                      <h3 class="text-font-24 font-normal max-w-[185px]">
+                        Other Tools Just Don’t Work
+                      </h3>
+
+                      <p class="mt-3 max-w-[298px]">
+                        You end up needing multiple overpriced and inconsistent
+                        tools to cover all your target domains.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single Slide -->
+              </div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Challenge Area -->
+
       <!-- We do Area -->
-      <section class="pt-25">
+      <section class="pt-3 md:pt-5">
         <div class="wrapper">
           <!-- Section Heading Area -->
-          <div class="w-full max-w-[780px] mx-auto text-center">
+          <div
+            class="w-full max-w-[300px] md:max-w-[780px] mx-auto text-center"
+          >
             <h2 class="section__heading">We’ll do the heavy lifting for you</h2>
           </div>
           <!-- Section Heading Area -->
 
-          <div class="space-y-10 mt-16">
+          <div class="space-y-6 md:space-y-10 mt-10 md:mt-16">
             <!-- Scrape Smarter -->
             <div
-              class="card__default py-24 px-[86px] flex items-center gap-[86px] min-h-[473px]"
+              class="card__default px-3.5 py-8 md:p-10 xl:py-24 xl:px-[86px] flex flex-col xl:flex-row xl:items-center gap-10 xl:gap-[86px] xl:min-h-[473px]"
             >
-              <div class="w-full max-w-[378px]">
+              <div class="w-full xl:max-w-[378px] pl-4.5 md:pl-0">
                 <h2 class="text-font-24 font-normal max-w-[270px]">
                   Scrape Smarter, Faster,<span class="block"
                     >and Without Fail</span
@@ -1078,17 +1764,27 @@
                 </div>
               </div>
 
-              <div class="flex-1">
-                <img src="images/scrape-smarter.svg" alt="scrape smarter" />
+              <div class="flex-1 max-w-[600px] mx-auto xl:max-w-full xl:mx-0">
+                <img
+                  class="hidden md:block"
+                  src="images/scrape-smarter.svg"
+                  alt="scrape smarter"
+                />
+
+                <img
+                  class="block md:hidden"
+                  src="images/scrape-smarter-mobile.svg"
+                  alt="scrape smarter"
+                />
               </div>
             </div>
             <!-- Scrape Smarter -->
 
             <!-- Unmatched Prices -->
             <div
-              class="card__default pl-10 pr-15.5 flex flex-row-reverse items-center gap-[51px] min-h-[473px]"
+              class="card__default px-3.5 pt-8 md:p-10 md:pb-0 xl:pl-10 xl:pr-15.5 flex flex-col xl:flex-row-reverse xl:items-center gap-10 xl:gap-[86px] xl:min-h-[473px]"
             >
-              <div class="w-full max-w-[378px]">
+              <div class="w-full xl:max-w-[378px] pl-4.5 md:pl-0">
                 <h2 class="text-font-24 font-normal max-w-[270px]">
                   Seamless Scaling
                   <span class="block">at Unmatched Prices</span>
@@ -1110,17 +1806,29 @@
                 </div>
               </div>
 
-              <div class="flex-1 self-end">
-                <img src="images/unmatched-prices.svg" alt="unmatched prices" />
+              <div
+                class="flex-1 xl:self-end max-w-[600px] mx-auto xl:max-w-full xl:mx-0"
+              >
+                <img
+                  class="hidden md:block"
+                  src="images/unmatched-prices.svg"
+                  alt="unmatched prices"
+                />
+
+                <img
+                  class="block md:hidden"
+                  src="images/unmatched-prices-mobile.svg"
+                  alt="scrape smarter"
+                />
               </div>
             </div>
             <!-- Unmatched Prices -->
 
             <!-- Expert Support -->
             <div
-              class="card__default py-3.5 px-[86px] flex items-center gap-[196px] min-h-[473px]"
+              class="card__default px-3.5 pt-8 pb-2.5 md:p-10 md:pb-3 xl:py-3.5 xl:px-[86px] flex flex-col xl:flex-row xl:items-center gap-10 xl:gap-[86px] xl:min-h-[473px]"
             >
-              <div class="w-full max-w-[378px]">
+              <div class="w-full xl:max-w-[378px] pl-4.5 md:pl-0">
                 <h2 class="text-font-24 font-normal max-w-[270px]">
                   Expert Support,<span class="block">Whenever You Need It</span>
                 </h2>
@@ -1142,8 +1850,18 @@
                 </div>
               </div>
 
-              <div class="flex-1">
-                <img src="images/expert-support.svg" alt="scrape smarter" />
+              <div class="flex-1 max-w-[600px] mx-auto xl:max-w-full xl:mx-0">
+                <img
+                  class="hidden md:block"
+                  src="images/expert-support.svg"
+                  alt="expert support"
+                />
+
+                <img
+                  class="block md:hidden"
+                  src="images/expert-support-mobile.svg"
+                  alt="expert support"
+                />
               </div>
             </div>
             <!-- Expert Support -->
@@ -1153,9 +1871,9 @@
       <!-- We do Area -->
 
       <!-- Web Scraping CTA Area -->
-      <section class="pt-20">
+      <section class="hidden md:block pt-20">
         <div class="wrapper">
-          <div class="card__outline pt-18 pb-22">
+          <div class="card__outline border-0 md:border md:pt-18 md:pb-22">
             <div class="w-full max-w-[610px] mx-auto text-center">
               <h2 class="section__heading tracking-tight">
                 Reliable, Scalable,<span class="block"
@@ -1163,10 +1881,12 @@
                 >
               </h2>
 
-              <div class="flex items-center justify-center gap-6 mt-6">
-                <a href="#" class="custom__btn">
+              <div
+                class="flex flex-col md:flex-row md:items-center md:justify-center gap-4 md:gap-6 mt-6"
+              >
+                <a href="#" class="custom__btn w-full md:w-fit">
                   START SCRAPING FOR FREE
-                  <span class="custom__btn-icon">
+                  <span class="custom__btn-icon hidden md:flex">
                     <svg
                       class="w-[16px] h-[10px] text-inherit"
                       viewBox="0 0 16 12"
@@ -1183,10 +1903,10 @@
 
                 <a
                   href="#"
-                  class="custom__btn custom__btn--white custom__btn--outline"
+                  class="custom__btn custom__btn--white custom__btn--outline w-full md:w-fit"
                 >
                   TALK TO AN EXPERT
-                  <span class="custom__btn-icon">
+                  <span class="custom__btn-icon hidden md:flex">
                     <svg
                       class="w-[16px] h-[10px] text-inherit"
                       viewBox="0 0 16 12"
@@ -1209,20 +1929,20 @@
 
       <!-- FAQ Area -->
       <section
-        class="pt-25 pb-[172px] bg-custom-white-400 rounded-[56px] relative -bottom-18"
+        class="md:pt-7 pb-20 md:pb-[172px] bg-custom-white-400 rounded-[32px] md:rounded-[56px] relative -bottom-18"
       >
         <div class="wrapper">
           <div
-            class="w-full max-w-[1005px] mx-auto flex items-start gap-[118px]"
+            class="w-full max-w-[1005px] mx-auto flex flex-col lg:flex-row lg:items-start gap-10 lg:gap-[118px]"
           >
             <div class="w-full max-w-[322px]">
               <h3 class="text-font-16 text-custom-gray-500">F.A.Q</h3>
 
-              <h2 class="text-font-40 tracking-tight mt-3">
+              <h2 class="text-font-40 tracking-tight mt-1 md:mt-3">
                 Frequently Asked Questions.
               </h2>
 
-              <p class="text-font-16 font-normal max-w-[300px] mt-4">
+              <p class="text-font-16 font-normal max-w-[300px] mt-2 md:mt-4">
                 Get answers to commonly asked questions.
               </p>
             </div>
@@ -1233,7 +1953,40 @@
                 <div class="accordion__item">
                   <button class="accordion__button">
                     <span class="text-font-16 font-normal"
-                      >Can I get a refund if I'm not satisfied?</span
+                      >Can I cancel anytime?</span
+                    >
+
+                    <div class="accordion__icon">
+                      <img
+                        class="accordion__icon-plus"
+                        src="images/faq-plus.svg"
+                        alt="plus"
+                      />
+                      <img
+                        class="accordion__icon-minus"
+                        src="images/faq-minus.svg"
+                        alt="minus"
+                      />
+                    </div>
+                  </button>
+
+                  <div class="accordion__content">
+                    <div class="space-y-4 pt-3 pb-2">
+                      <p>
+                        Though it’s rare, we do offer refunds within the first
+                        three days of purchase. Just make sure to review our
+                        refunds policy for details.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Accordion Item -->
+
+                <!-- Accordion Item -->
+                <div class="accordion__item">
+                  <button class="accordion__button">
+                    <span class="text-font-16 font-normal"
+                      >Do you have a free trial ?</span
                     >
 
                     <div class="accordion__icon">
@@ -1299,7 +2052,7 @@
                 <div class="accordion__item">
                   <button class="accordion__button">
                     <span class="text-font-16 font-normal"
-                      >Can I get a refund if I'm not satisfied?</span
+                      >Do I need a credit card to start the free trial?</span
                     >
 
                     <div class="accordion__icon">
@@ -1332,7 +2085,40 @@
                 <div class="accordion__item">
                   <button class="accordion__button">
                     <span class="text-font-16 font-normal"
-                      >Can I get a refund if I'm not satisfied?</span
+                      >Do I get charged for the failed requests?</span
+                    >
+
+                    <div class="accordion__icon">
+                      <img
+                        class="accordion__icon-plus"
+                        src="images/faq-plus.svg"
+                        alt="plus"
+                      />
+                      <img
+                        class="accordion__icon-minus"
+                        src="images/faq-minus.svg"
+                        alt="minus"
+                      />
+                    </div>
+                  </button>
+
+                  <div class="accordion__content">
+                    <div class="space-y-4 pt-3 pb-2">
+                      <p>
+                        Though it’s rare, we do offer refunds within the first
+                        three days of purchase. Just make sure to review our
+                        refunds policy for details.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Accordion Item -->
+
+                <!-- Accordion Item -->
+                <div class="accordion__item">
+                  <button class="accordion__button">
+                    <span class="text-font-16 font-normal"
+                      >Can I see my usage data?</span
                     >
 
                     <div class="accordion__icon">
@@ -1384,13 +2170,15 @@
     <!-- Main content -->
 
     <!-- Footer Area -->
-    <footer class="pt-[170px] pb-14.5 bg-custom-black">
+    <footer class="pt-[120px] md:pt-[170px] pb-12 md:pb-14.5 bg-custom-black">
       <div class="wrapper">
-        <div class="flex">
+        <div class="flex flex-col xl:flex-row">
           <div
-            class="flex-1 border-l border-custom-gray-100/20 first-of-type:border-l-0 px-6 first-of-type:pl-0"
+            class="flex-1 border-l border-custom-gray-100/20 first-of-type:border-l-0 xl:px-6 xl:first-of-type:pl-0"
           >
-            <div class="flex items-center gap-8">
+            <div
+              class="flex items-center justify-between xl:justify-start gap-8"
+            >
               <a href="#" class="w-16">
                 <img src="images/footer-logo.svg" alt="footer logo" />
               </a>
@@ -1420,37 +2208,330 @@
               </ul>
             </div>
 
-            <div class="grid grid-cols-3 gap-x-4.5 gap-y-6 mt-12">
-              <img
-                class="w-fit h-[71px] object-contain"
-                src="images/footer-badge-1.png"
-                alt="footer badge"
-              />
-              <img
-                class="w-fit h-[71px] object-contain"
-                src="images/footer-badge-2.png"
-                alt="footer badge"
-              />
-              <img
-                class="w-fit h-[71px] object-contain"
-                src="images/footer-badge-3.png"
-                alt="footer badge"
-              />
-              <img
-                class="w-fit h-[71px] object-contain"
-                src="images/footer-badge-4.png"
-                alt="footer badge"
-              />
-              <img
-                class="w-fit h-[71px] object-contain"
-                src="images/footer-badge-5.png"
-                alt="footer badge"
-              />
+            <!-- Only Mobile Accordions -->
+            <div
+              class="custom__accodion custom__accodion--common custom__accodion--footer mt-12 xl:hidden"
+            >
+              <!-- Accordion Item -->
+              <div class="accordion__item">
+                <button class="accordion__button text-custom-white">
+                  <span class="text-font-16 font-normal">Company</span>
+
+                  <div class="accordion__icon">
+                    <img src="images/accordion-arrow.svg" alt="arrow" />
+                  </div>
+                </button>
+
+                <div class="accordion__content">
+                  <div class="space-y-4 pt-4">
+                    <ul class="space-y-3.5">
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Support</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Sales</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Blog</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Support</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Features</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Support</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Features</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion Item -->
+
+              <!-- Accordion Item -->
+              <div class="accordion__item">
+                <button class="accordion__button text-custom-white">
+                  <span class="text-font-16 font-normal">Terms of Use</span>
+
+                  <div class="accordion__icon">
+                    <img src="images/accordion-arrow.svg" alt="arrow" />
+                  </div>
+                </button>
+
+                <div class="accordion__content">
+                  <div class="space-y-4 pt-4">
+                    <ul class="space-y-3.5">
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Term of Use</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Privacy Policy</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Affiliate Program</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion Item -->
+
+              <!-- Accordion Item -->
+              <div class="accordion__item">
+                <button class="accordion__button text-custom-white">
+                  <span class="text-font-16 font-normal">Web Scraping</span>
+
+                  <div class="accordion__icon">
+                    <img src="images/accordion-arrow.svg" alt="arrow" />
+                  </div>
+                </button>
+
+                <div class="accordion__content">
+                  <div class="space-y-4 pt-4">
+                    <ul class="space-y-3.5">
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Web Scraping is Legal?</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Web Scraping Proxies</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Rotating Proxy</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Search Engine Scraping</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion Item -->
+
+              <!-- Accordion Item -->
+              <div class="accordion__item">
+                <button class="accordion__button text-custom-white">
+                  <span class="text-font-16 font-normal">Use Cases</span>
+
+                  <div class="accordion__icon">
+                    <img src="images/accordion-arrow.svg" alt="arrow" />
+                  </div>
+                </button>
+
+                <div class="accordion__content">
+                  <div class="space-y-4 pt-4">
+                    <ul class="space-y-3.5">
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Web Scraping in Python</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Web Scraping in NodeJS</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Web Scraping in Java</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Web Scraping in PHP</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Web Scraping in Python</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Web Scraping in NodeJS</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Web Scraping in Java</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Web Scraping in PHP</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Web Scraping in Python</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Web Scraping in NodeJS</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Web Scraping in Java</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Web Scraping in PHP</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion Item -->
+
+              <!-- Accordion Item -->
+              <div class="accordion__item">
+                <button class="accordion__button text-custom-white">
+                  <span class="text-font-16 font-normal">Use Cases</span>
+
+                  <div class="accordion__icon">
+                    <img src="images/accordion-arrow.svg" alt="arrow" />
+                  </div>
+                </button>
+
+                <div class="accordion__content">
+                  <div class="space-y-4 pt-4">
+                    <ul class="space-y-3.5">
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Web Scraping in Python</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Web Scraping in NodeJS</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Web Scraping in Java</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Web Scraping in PHP</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Web Scraping in Python</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Web Scraping in NodeJS</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Web Scraping in Java</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Web Scraping in PHP</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Web Scraping in Python</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline"
+                          >Web Scraping in NodeJS</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion Item -->
+            </div>
+            <!-- Only Mobile Accordions -->
+
+            <div
+              class="xl:space-y-6 mt-8 xl:mt-12 w-full md:max-w-[305px] mx-auto xl:mx-0"
+            >
+              <div
+                class="grid grid-cols-3 gap-0 border-b border-custom-gray-100/20 last-of-type:border-b-0 xl:border-b-0 pb-4.5 xl:pb-0"
+              >
+                <img
+                  class="w-fit h-[71px] object-contain"
+                  src="images/footer-badge-1.png"
+                  alt="footer badge"
+                />
+                <img
+                  class="w-fit h-[71px] object-contain"
+                  src="images/footer-badge-2.png"
+                  alt="footer badge"
+                />
+                <img
+                  class="w-fit h-[71px] object-contain"
+                  src="images/footer-badge-3.png"
+                  alt="footer badge"
+                />
+              </div>
+
+              <div
+                class="grid grid-cols-3 gap-0 border-b border-custom-gray-100/20 last-of-type:border-b-0 xl:border-b-0 pt-4.5 xl:pt-0"
+              >
+                <img
+                  class="w-fit h-[71px] object-contain"
+                  src="images/footer-badge-4.png"
+                  alt="footer badge"
+                />
+                <img
+                  class="w-fit h-[71px] object-contain"
+                  src="images/footer-badge-5.png"
+                  alt="footer badge"
+                />
+              </div>
             </div>
           </div>
 
+          <!-- Only Desktop Items -->
           <div
-            class="w-full max-w-[220px] border-l border-custom-gray-100/20 first-of-type:border-l-0 px-6 first-of-type:pl-0 space-y-17"
+            class="hidden xl:block w-full max-w-[220px] border-l border-custom-gray-100/20 first-of-type:border-l-0 px-6 first-of-type:pl-0 space-y-17"
           >
             <div class="space-y-2.5">
               <h3 class="text-font-14 text-custom-white">Company</h3>
@@ -1463,7 +2544,12 @@
                 </li>
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Sales</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline"
+                    >Blog</a
                   >
                 </li>
                 <li>
@@ -1473,7 +2559,7 @@
                 </li>
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Features</a
                   >
                 </li>
                 <li>
@@ -1483,34 +2569,29 @@
                 </li>
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Features</a
                   >
                 </li>
               </ul>
             </div>
 
             <div class="space-y-2.5">
-              <h3 class="text-font-14 text-custom-white">Company</h3>
+              <h3 class="text-font-14 text-custom-white">Terms of Use</h3>
 
               <ul class="space-y-2.5">
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Term of Use</a
                   >
                 </li>
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Privacy Policy</a
                   >
                 </li>
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Affiliate Program</a
                   >
                 </li>
               </ul>
@@ -1518,7 +2599,7 @@
           </div>
 
           <div
-            class="w-full max-w-[240px] border-l border-custom-gray-100/20 first-of-type:border-l-0 px-6 first-of-type:pl-0"
+            class="hidden xl:block w-full max-w-[240px] border-l border-custom-gray-100/20 first-of-type:border-l-0 px-6 first-of-type:pl-0"
           >
             <div class="space-y-2.5">
               <h3 class="text-font-14 text-custom-white">Web Scraping</h3>
@@ -1526,22 +2607,22 @@
               <ul class="space-y-2.5">
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Web Scraping is Legal?</a
                   >
                 </li>
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Web Scraping Proxies</a
                   >
                 </li>
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Rotating Proxy</a
                   >
                 </li>
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Search Engine Scraping</a
                   >
                 </li>
               </ul>
@@ -1549,70 +2630,70 @@
           </div>
 
           <div
-            class="w-full max-w-[252px] border-l border-custom-gray-100/20 first-of-type:border-l-0 px-6 first-of-type:pl-0"
+            class="hidden xl:block w-full max-w-[252px] border-l border-custom-gray-100/20 first-of-type:border-l-0 px-6 first-of-type:pl-0"
           >
             <div class="space-y-2.5">
-              <h3 class="text-font-14 text-custom-white">Web Scraping</h3>
+              <h3 class="text-font-14 text-custom-white">Use Cases</h3>
 
               <ul class="space-y-2.5">
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Web Scraping in Python</a
                   >
                 </li>
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Web Scraping in NodeJS</a
                   >
                 </li>
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Web Scraping in Java</a
                   >
                 </li>
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Web Scraping in PHP</a
                   >
                 </li>
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Web Scraping in Python</a
                   >
                 </li>
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Web Scraping in NodeJS</a
                   >
                 </li>
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Web Scraping in Java</a
                   >
                 </li>
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Web Scraping in PHP</a
                   >
                 </li>
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Web Scraping in Python</a
                   >
                 </li>
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Web Scraping in NodeJS</a
                   >
                 </li>
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Web Scraping in Java</a
                   >
                 </li>
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Web Scraping in PHP</a
                   >
                 </li>
               </ul>
@@ -1620,68 +2701,71 @@
           </div>
 
           <div
-            class="w-full max-w-[230px] border-l border-custom-gray-100/20 first-of-type:border-l-0 px-6 first-of-type:pl-0"
+            class="hidden xl:block w-full max-w-[230px] border-l border-custom-gray-100/20 first-of-type:border-l-0 px-6 first-of-type:pl-0"
           >
             <div class="space-y-2.5">
-              <h3 class="text-font-14 text-custom-white">Web Scraping</h3>
+              <h3 class="text-font-14 text-custom-white">Use Cases</h3>
 
               <ul class="space-y-2.5">
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Web Scraping in Python</a
                   >
                 </li>
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Web Scraping in NodeJS</a
                   >
                 </li>
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Web Scraping in Java</a
                   >
                 </li>
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Web Scraping in PHP</a
                   >
                 </li>
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Web Scraping in Python</a
                   >
                 </li>
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Web Scraping in NodeJS</a
                   >
                 </li>
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Web Scraping in Java</a
                   >
                 </li>
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Web Scraping in PHP</a
                   >
                 </li>
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Web Scraping in Python</a
                   >
                 </li>
                 <li>
                   <a href="#" class="text-custom-white/50 hover:underline"
-                    >Support</a
+                    >Web Scraping in NodeJS</a
                   >
                 </li>
               </ul>
             </div>
           </div>
+          <!-- Only Desktop Items -->
         </div>
 
-        <div class="mt-20 flex items-center justify-between gap-4">
+        <div
+          class="mt-10 xl:mt-20 flex flex-col-reverse md:flex-row items-center md:justify-between gap-5 md:gap-4"
+        >
           <p class="text-font-12 text-custom-gray-500">
             Copyright © 2020 - 2025 Scrape.do | PACKEND, LLC
           </p>
@@ -1704,6 +2788,7 @@
     <!-- Footer Area -->
 
     <!-- JS CDN Link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
