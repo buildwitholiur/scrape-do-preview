@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Scrape | Blog Details</title>
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Custom Font file -->
+    <link rel="stylesheet" href="fonts/style.css">
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <!-- Header Area -->
+    <header class="w-full">
+      <div class="w-full bg-custom-white">
+        <div class="wrapper">
+          <nav class="py-4.5 rounded-2xl custom__inner-shadow h-20 flex items-center justify-between gap-12">
+            <div class="flex items-center gap-15">
+              <a href="#" class="w-[150px] h-7">
+                <img src="images/logo.svg" alt="logo" />
+              </a>
+
+              <ul class="hidden xl:flex items-center gap-4 border-custom-gray-100 pl-25">
+                <li><a href="#" class="nav__link">Pricing</a></li>
+                <li><a href="#" class="nav__link">Scraping API</a></li>
+                <li class="relative nav-item">
+                  <button class="nav__link submenu-toggle">
+                    Features
+                    <img class="w-4 h-auto transition-transform arrow-icon" src="images/arrow-down.svg" alt="arrow" />
+                  </button>
+
+                  <div class="submenu hidden absolute left-0 top-full mt-7 w-[637px] bg-custom-white custom__shadow rounded-3xl z-50">
+                    <ul class="p-4 pr-5 rounded-3xl custom__inner-shadow grid grid-cols-2 gap-x-5.5">
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+
+                            <span class="font-normal tracking-tight">Headless Browser</span>
+                          </div>
+
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+
+                            <span class="font-normal tracking-tight">Dynamic TLS Fingerprinting</span>
+                          </div>
+
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+
+                            <span class="font-normal tracking-tight">Header and User Agent Rotator</span>
+                          </div>
+
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+
+                            <span class="font-normal tracking-tight">Asynchronous Web Scraper</span>
+                          </div>
+
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+
+                            <span class="font-normal tracking-tight">Headless Browser</span>
+                          </div>
+
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+
+                            <span class="font-normal tracking-tight">Headless Browser</span>
+                          </div>
+
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+
+                            <span class="font-normal tracking-tight">Header and User Agent Rotator</span>
+                          </div>
+
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+
+                            <span class="font-normal tracking-tight">Headless Browser</span>
+                          </div>
+
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="relative nav-item">
+                  <button class="nav__link submenu-toggle">
+                    Industries
+                    <img class="w-4 h-auto transition-transform arrow-icon" src="images/arrow-down.svg" alt="arrow" />
+                  </button>
+
+                  <div class="submenu hidden absolute left-0 top-full mt-7 w-[637px] bg-custom-white custom__shadow rounded-3xl z-50">
+                    <ul class="p-4 pr-5 rounded-3xl custom__inner-shadow grid grid-cols-2 gap-x-5.5">
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+
+                            <span class="font-normal tracking-tight">Headless Browser</span>
+                          </div>
+
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+
+                            <span class="font-normal tracking-tight">Dynamic TLS Fingerprinting</span>
+                          </div>
+
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+
+                            <span class="font-normal tracking-tight">Header and User Agent Rotator</span>
+                          </div>
+
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+
+                            <span class="font-normal tracking-tight">Asynchronous Web Scraper</span>
+                          </div>
+
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+
+                            <span class="font-normal tracking-tight">Headless Browser</span>
+                          </div>
+
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+
+                            <span class="font-normal tracking-tight">Headless Browser</span>
+                          </div>
+
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+
+                            <span class="font-normal tracking-tight">Header and User Agent Rotator</span>
+                          </div>
+
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+
+                            <span class="font-normal tracking-tight">Headless Browser</span>
+                          </div>
+
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="relative nav-item">
+                  <button class="nav__link submenu-toggle">
+                    Company
+                    <img class="w-4 h-auto transition-transform arrow-icon" src="images/arrow-down.svg" alt="arrow" />
+                  </button>
+
+                  <div class="submenu hidden absolute left-0 top-full mt-7 w-[637px] bg-custom-white custom__shadow rounded-3xl z-50">
+                    <ul class="p-4 pr-5 rounded-3xl custom__inner-shadow grid grid-cols-2 gap-x-5.5">
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+
+                            <span class="font-normal tracking-tight">Headless Browser</span>
+                          </div>
+
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+
+                            <span class="font-normal tracking-tight">Dynamic TLS Fingerprinting</span>
+                          </div>
+
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+
+                            <span class="font-normal tracking-tight">Header and User Agent Rotator</span>
+                          </div>
+
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+
+                            <span class="font-normal tracking-tight">Asynchronous Web Scraper</span>
+                          </div>
+
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+
+                            <span class="font-normal tracking-tight">Headless Browser</span>
+                          </div>
+
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+
+                            <span class="font-normal tracking-tight">Headless Browser</span>
+                          </div>
+
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+
+                            <span class="font-normal tracking-tight">Header and User Agent Rotator</span>
+                          </div>
+
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+
+                            <span class="font-normal tracking-tight">Headless Browser</span>
+                          </div>
+
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#" class="nav__link">Blog</a></li>
+              </ul>
+            </div>
+
+            <div class="flex items-center gap-6 xl:gap-10">
+              <button class="w-5 h-5">
+                <img src="images/search.svg" alt="search" />
+              </button>
+
+              <button class="hamburger__btn w-6 h-auto xl:hidden">
+                <img src="images/menu.svg" alt="menu" />
+              </button>
+
+              <a href="#" class="custom__btn-dashboard hidden xl:flex">Dashboard</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Header Area -->
+
+    <!-- Mobile Menu -->
+    <div class="mobile__menu fixed top-0 left-0 w-full h-screen z-50 bg-custom-black-400/97 overflow-auto hidden xl:hidden pb-16">
+      <nav class="py-6.5 px-4 md:px-10">
+        <div class="flex items-center justify-between gap-12">
+          <a href="#" class="w-[150px] h-7">
+            <img src="images/logo-light.svg" alt="logo light" />
+          </a>
+
+          <button class="hamburger__close-btn w-6 h-6">
+            <img src="images/close.svg" alt="close" />
+          </button>
+        </div>
+
+        <!-- Only Mobile Accordions -->
+        <div class="custom__accodion custom__accodion--common custom__accodion--navbar mt-10 md:mt-12">
+          <!-- Accordion Item -->
+          <div class="accordion__item">
+            <a href="#" class="text-custom-white text-font-16 font-normal">Pricing</a>
+          </div>
+          <!-- Accordion Item -->
+
+          <!-- Accordion Item -->
+          <div class="accordion__item">
+            <a href="#" class="text-custom-white text-font-16 font-normal">Scraping API</a>
+          </div>
+          <!-- Accordion Item -->
+
+          <!-- Accordion Item -->
+          <div class="accordion__item">
+            <button class="accordion__button text-custom-white">
+              <span class="text-font-16 font-normal">Features</span>
+
+              <div class="accordion__icon">
+                <img src="images/accordion-arrow.svg" alt="arrow" />
+              </div>
+            </button>
+
+            <div class="accordion__content">
+              <div class="space-y-4 pt-4">
+                <ul class="space-y-3.5">
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Anti-Bot Bypass</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Headless Browser</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">CAPTCHA Handling</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Header and User Agent Rotator</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Dynamic TLS Fingerprinting</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Asynchronous Web Scraper</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Automatic Proxy Rotation</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Geo-Targeting</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Accordion Item -->
+
+          <!-- Accordion Item -->
+          <div class="accordion__item">
+            <button class="accordion__button text-custom-white">
+              <span class="text-font-16 font-normal">Industries</span>
+
+              <div class="accordion__icon">
+                <img src="images/accordion-arrow.svg" alt="arrow" />
+              </div>
+            </button>
+
+            <div class="accordion__content">
+              <div class="space-y-4 pt-4">
+                <ul class="space-y-3.5">
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Anti-Bot Bypass</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Headless Browser</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">CAPTCHA Handling</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Header and User Agent Rotator</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Dynamic TLS Fingerprinting</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Asynchronous Web Scraper</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Automatic Proxy Rotation</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Geo-Targeting</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Accordion Item -->
+
+          <!-- Accordion Item -->
+          <div class="accordion__item">
+            <button class="accordion__button text-custom-white">
+              <span class="text-font-16 font-normal">Company</span>
+
+              <div class="accordion__icon">
+                <img src="images/accordion-arrow.svg" alt="arrow" />
+              </div>
+            </button>
+
+            <div class="accordion__content">
+              <div class="space-y-4 pt-4">
+                <ul class="space-y-3.5">
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Anti-Bot Bypass</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Headless Browser</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">CAPTCHA Handling</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Header and User Agent Rotator</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Dynamic TLS Fingerprinting</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Asynchronous Web Scraper</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Automatic Proxy Rotation</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Geo-Targeting</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Accordion Item -->
+
+          <!-- Accordion Item -->
+          <div class="accordion__item">
+            <a href="#" class="text-custom-white text-font-16 font-normal">Blog</a>
+          </div>
+          <!-- Accordion Item -->
+        </div>
+        <!-- Only Mobile Accordions -->
+
+        <div class="flex items-center justify-between xl:justify-start gap-8 mt-6">
+          <a href="#" class="w-16">
+            <img src="images/footer-logo.svg" alt="footer logo" />
+          </a>
+
+          <ul class="flex items-center gap-4">
+            <li>
+              <a href="#" class="w-10 h-10 border border-custom-gray-100 rounded-full flex items-center justify-center">
+                <img class="w-4" src="images/x-twitter.svg" alt="x twitter" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="w-10 h-10 border border-custom-gray-100 rounded-full flex items-center justify-center">
+                <img class="w-4" src="images/linkedin.svg" alt="linkedin" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- Mobile Menu -->
+
+    <!-- Main content -->
+    <main>
+
+      <!-- Blog Details Area -->
+      <section class="relative flex">
+        <!-- sidebar -->
+        <div class="max-lg:hidden shrink-0 w-54 xl:w-64 sticky top-0 left-0 h-screen overflow-hidden py-12 flex flex-col bg-[#EBEBEB] shadow-[0_48px_48px_-24px_rgba(51,51,51,0.04),_0_-1px_1px_-0.5px_rgba(51,51,51,0.06)_inset] z-30">
+          <div class="px-4 xl:px-6 mb-5">
+            <h6 class="text-base leading-7 font-medium -tracking-[0.084px]">Titles</h6>
+          </div>
+          <div class="grow overflow-auto px-4 xl:px-6">
+            <ul class="blog-nav">
+              <li class="blog-nav__item active">
+                <a href="#" class="blog-nav__link block relative text-sm font-normal -tracking-[0.18px] pl-4 py-2 before:w-0.5 before:h-full before:bg-custom-black-400/10 before:absolute before:left-0 before:top-0 before:transition-all before:duration-300 transition-all duration-300 group"><span class="opacity-60 group-hover:opacity-100 transition-all duration-300">What is InstantSearch.js?</span></a>
+              </li>
+              <li class="blog-nav__item">
+                <a href="#" class="blog-nav__link block relative text-sm font-normal -tracking-[0.18px] pl-4 py-2 before:w-0.5 before:h-full before:bg-custom-black-400/10 before:absolute before:left-0 before:top-0 before:transition-all before:duration-300 transition-all duration-300 group"><span class="opacity-60 group-hover:opacity-100 transition-all duration-300">Installation</span></a>
+              </li>
+              <li class="blog-nav__item">
+                <a href="#" class="blog-nav__link block relative text-sm font-normal -tracking-[0.18px] pl-4 py-2 before:w-0.5 before:h-full before:bg-custom-black-400/10 before:absolute before:left-0 before:top-0 before:transition-all before:duration-300 transition-all duration-300 group"><span class="opacity-60 group-hover:opacity-100 transition-all duration-300">Getting started</span></a>
+              </li>
+              <li class="blog-nav__item">
+                <a href="#" class="blog-nav__link block relative text-sm font-normal -tracking-[0.18px] pl-4 py-2 before:w-0.5 before:h-full before:bg-custom-black-400/10 before:absolute before:left-0 before:top-0 before:transition-all before:duration-300 transition-all duration-300 group"><span class="opacity-60 group-hover:opacity-100 transition-all duration-300">Click and conversion events</span></a>
+              </li>
+              <li class="blog-nav__item">
+                <a href="#" class="blog-nav__link block relative text-sm font-normal -tracking-[0.18px] pl-4 py-2 before:w-0.5 before:h-full before:bg-custom-black-400/10 before:absolute before:left-0 before:top-0 before:transition-all before:duration-300 transition-all duration-300 group"><span class="opacity-60 group-hover:opacity-100 transition-all duration-300">Upgrade guides</span></a>
+              </li>
+              <li class="blog-nav__item">
+                <a href="#" class="blog-nav__link block relative text-sm font-normal -tracking-[0.18px] pl-4 py-2 before:w-0.5 before:h-full before:bg-custom-black-400/10 before:absolute before:left-0 before:top-0 before:transition-all before:duration-300 transition-all duration-300 group"><span class="opacity-60 group-hover:opacity-100 transition-all duration-300">Getting started</span></a>
+              </li>
+              <li class="blog-nav__item">
+                <a href="#" class="blog-nav__link block relative text-sm font-normal -tracking-[0.18px] pl-4 py-2 before:w-0.5 before:h-full before:bg-custom-black-400/10 before:absolute before:left-0 before:top-0 before:transition-all before:duration-300 transition-all duration-300 group"><span class="opacity-60 group-hover:opacity-100 transition-all duration-300">Click and conversion events</span></a>
+              </li>
+              <li class="blog-nav__item">
+                <a href="#" class="blog-nav__link block relative text-sm font-normal -tracking-[0.18px] pl-4 py-2 before:w-0.5 before:h-full before:bg-custom-black-400/10 before:absolute before:left-0 before:top-0 before:transition-all before:duration-300 transition-all duration-300 group"><span class="opacity-60 group-hover:opacity-100 transition-all duration-300">Upgrade guides</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- sidebar -->
+
+        <div class="flex-1 w-full lg:-ml-64">
+          <div class="wrapper">
+            <div class="flex justify-end gap-8 xl:gap-10 pt-13 lg:pl-58 xl:pl-70 2xl:pl-0">
+              <!-- blog details body -->
+              <div class="flex-1 w-full lg:max-w-[770px]">
+                <div class="">
+                  <h6 class="text-sm leading-normal mb-4 font-light max-md:text-center">Category: Scraping use cases</h6>
+                  <h1 class="text-4xl md:text-font-40 leading-11 md:leading-12 font-semibold tracking-tighter mb-3 max-w-[550px] w-full break-words max-md:text-center">TruePeopleSearch.com Scraping: Extract Data Without Blocks</h1>
+                  <div class="flex gap-3 flex-wrap max-md:justify-center mb-6 lg:mb-4">
+                    <div class="flex items-center gap-2 text-sm leading-normal">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.4739 10.12L8.40724 8.88671C8.04724 8.67338 7.75391 8.16005 7.75391 7.74005V5.00671" stroke="#F9D94A" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M2.66536 4.00004C1.83203 5.11337 1.33203 6.50004 1.33203 8.00004C1.33203 11.68 4.3187 14.6667 7.9987 14.6667C11.6787 14.6667 14.6654 11.68 14.6654 8.00004C14.6654 4.32004 11.6787 1.33337 7.9987 1.33337C7.04536 1.33337 6.13203 1.53337 5.31203 1.90004" stroke="#F9D94A" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <span>24 Mins Read</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-sm leading-normal">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.33203 1.33337V3.33337" stroke="#F9D94A" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M10.668 1.33337V3.33337" stroke="#F9D94A" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M2.33203 6.05994H13.6654" stroke="#F9D94A" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M2 8.67338V5.66671C2 3.66671 3 2.33337 5.33333 2.33337H10.6667C13 2.33337 14 3.66671 14 5.66671V11.3334C14 13.3334 13 14.6667 10.6667 14.6667H5.33333C3 14.6667 2 13.3334 2 11.3334" stroke="#F9D94A" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M7.99764 9.13326H8.00363" stroke="#F9D94A" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M5.52889 9.13326H5.53488" stroke="#F9D94A" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M5.52889 11.1333H5.53488" stroke="#F9D94A" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <span>Created Date: October 10, 2024</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-sm leading-normal">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.33203 1.33337V3.33337" stroke="#F9D94A" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M10.668 1.33337V3.33337" stroke="#F9D94A" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M2.33203 6.05994H13.6654" stroke="#F9D94A" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M2 8.67338V5.66671C2 3.66671 3 2.33337 5.33333 2.33337H10.6667C13 2.33337 14 3.66671 14 5.66671V11.3334C14 13.3334 13 14.6667 10.6667 14.6667H5.33333C3 14.6667 2 13.3334 2 11.3334" stroke="#F9D94A" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M7.99764 9.13326H8.00363" stroke="#F9D94A" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M5.52889 9.13326H5.53488" stroke="#F9D94A" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M5.52889 11.1333H5.53488" stroke="#F9D94A" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <span>Updated Date: October 10, 2024</span>
+                    </div>
+                  </div>
+                  <!-- blog author -->
+                  <div class="mb-6 lg:hidden flex items-center justify-between gap-4">
+                    <div class="flex items-center gap-4">
+                      <img src="images/user-avatar.jpg" alt="author image" class="shrink-0 w-14 h-14 rounded-lg object-cover">
+                      <div>
+                        <h6 class="text-base font-medium -tracking-[0.084px]">Emily Carter</h6>
+                        <p class="text-font-14 font-normal opacity-70">Full Stack Developer</p>
+                      </div>
+                    </div>
+                    <div class="inline-flex items-center gap-2.5 px-2.5 py-2 rounded-4xl border border-custom-gray-100 mt-4">
+                      <a href="#" class="inline-block"><img src="images/github.svg" alt="github" class="w-3 aspect-square"></a>
+                      <a href="#" class="inline-block"><img src="images/linkedin-2.svg" alt="linkedin" class="w-3 aspect-square"></a>
+                      <a href="#" class="inline-block"><img src="images/medium.svg" alt="medium" class="w-3 aspect-square"></a>
+                    </div>
+                  </div>
+                  <!-- blog author -->
+                  <div class="w-full h-px bg-[#C2C2C2] relative after:w-2.5 after:h-2.5 after:bg-white after:border-2 after:border-custom-gray-100 after:rounded-full after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2"></div>
+                </div>
+                <div class="flex items-center gap-4 mt-5 lg:hidden">
+                  <div class="relative grow w-1/2">
+                    <button type="button" class="dropdown-toggle w-full flex items-center justify-between bg-white rounded-2xl custom__shadow--lg h-14 px-4 text-sm font-medium -tracking-[0.084px]" data-menu-id="table-of-content_dropdown">
+                      <span>Table of Contents</span>
+                      <span class="dropdown-toggle-icon flex items-center justify-center w-5 h-5"><img src="images/angle-down.svg" alt="angle down" class="w-2.5"></span>
+                    </button>
+                    <div id="table-of-content_dropdown" class="dropdown-menu bg-white p-1 rounded-2xl shadow-[0px_4px_20px_0px_rgba(0,0,0,0.25)] w-full absolute top-full left-0 mt-2 z-10 opacity-0 invisible transition-all duration-500 max-h-[300px] overflow-y-auto">
+                      <ul class="p-4 space-y-2">
+                        <li><a href="#" class="dropdown-menu-item text-sm font-normal -tracking-[0.18px]">Why Is Scraping TruePeopleSearch.com Difficult?</a></li>
+                        <li><a href="#" class="dropdown-menu-item text-sm font-normal -tracking-[0.18px]">Creating a Basic TruePeopleSearch Scraper</a></li>
+                        <li><a href="#" class="dropdown-menu-item text-sm font-normal -tracking-[0.18px]">Prerequisites</a></li>
+                        <li><a href="#" class="dropdown-menu-item text-sm font-normal -tracking-[0.18px]">Sending a Request and Verifying Access</a></li>
+                        <li><a href="#" class="dropdown-menu-item text-sm font-normal -tracking-[0.18px]">Extracting Name and Age?</a></li>
+                        <li><a href="#" class="dropdown-menu-item text-sm font-normal -tracking-[0.18px]">Extracting Address, City, and State</a></li>
+                        <li><a href="#" class="dropdown-menu-item text-sm font-normal -tracking-[0.18px]">Extracting Phone Number</a></li>
+                        <li><a href="#" class="dropdown-menu-item text-sm font-normal -tracking-[0.18px]">Final Code and Output</a></li>
+                        <li><a href="#" class="dropdown-menu-item text-sm font-normal -tracking-[0.18px]">Conclusion</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="relative grow w-1/2">
+                    <button type="button" class="dropdown-toggle w-full flex items-center justify-between bg-white rounded-2xl custom__shadow--lg h-14 px-4 text-sm font-medium -tracking-[0.084px]" data-menu-id="titles_dropdown">
+                      <span>Titles</span>
+                      <span class="dropdown-toggle-icon flex items-center justify-center w-5 h-5"><img src="images/angle-down.svg" alt="angle down" class="w-2.5"></span>
+                    </button>
+                    <div id="titles_dropdown" class="dropdown-menu bg-white p-1 rounded-2xl shadow-[0px_4px_20px_0px_rgba(0,0,0,0.25)] w-full absolute top-full left-0 mt-2 z-10 opacity-0 invisible transition-all duration-500 max-h-[300px] overflow-y-auto ">
+                      <ul class="p-4 space-y-2">
+                        <li><a href="#" class="dropdown-menu-item text-sm font-normal -tracking-[0.18px]">What is InstantSearch.js?</a></li>
+                        <li><a href="#" class="dropdown-menu-item text-sm font-normal -tracking-[0.18px]">Installation</a></li>
+                        <li><a href="#" class="dropdown-menu-item text-sm font-normal -tracking-[0.18px]">Getting started</a></li>
+                        <li><a href="#" class="dropdown-menu-item text-sm font-normal -tracking-[0.18px]">Click and conversion events</a></li>
+                        <li><a href="#" class="dropdown-menu-item text-sm font-normal -tracking-[0.18px]">Upgrade guides</a></li>
+                        <li><a href="#" class="dropdown-menu-item text-sm font-normal -tracking-[0.18px]">Getting started</a></li>
+                        <li><a href="#" class="dropdown-menu-item text-sm font-normal -tracking-[0.18px]">Click and conversion events</a></li>
+                        <li><a href="#" class="dropdown-menu-item text-sm font-normal -tracking-[0.18px]">Upgrade guides</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-5 md:mt-6 space-y-3 md:pr-7">
+                  <p class="text-black text-lg leading-7 -tracking-[0.078px]">TruePeopleSearch.com is one of the most popular free people search tools out there.</p>
+                  <p class="text-black text-lg leading-7 -tracking-[0.078px]">It’ll show names, addresses, phone numbers, and public records in seconds without even signing up.</p>
+                  <p class="text-black text-lg leading-7 -tracking-[0.078px] font-medium">But try scraping it, and things fall apart quickly.</p>
+                  <p class="text-black text-lg leading-7 -tracking-[0.078px]">The site doesn’t just make <a href="#" class="underline">web scraping</a> difficult; it actively blocks non-browser traffic, throws up Cloudflare challenges, and refuses to load unless you’re coming from inside the US.</p>
+                  <p class="text-black text-lg leading-7 -tracking-[0.078px]">It looks simple on the surface, but underneath, it’s packed with defenses built to shut your script down before it gets anywhere.</p>
+                  <p class="text-black text-lg leading-7 -tracking-[0.078px]">That said, there’s a way through it.</p>
+                  <p class="text-black text-lg leading-7 -tracking-[0.078px]">In this guide, we’ll use Python and Scrape.do to extract data from TruePeopleSearch in a clean, structured way.</p>
+                </div>
+
+                <!-- alert box -->
+                <div class="bg-white px-5 md:px-8 py-5 rounded-2xl shadow-[0_48px_48px_-24px_rgba(51,51,51,0.04),_0_-1px_1px_-0.5px_rgba(51,51,51,0.06)_inset] flex items-start gap-4 mt-10">
+                  <span>
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M22.0951 15.92L15.6553 4.4C14.7899 2.85 13.5925 2 12.2744 2C10.9562 2 9.75884 2.85 8.89349 4.4L2.45368 15.92C1.63864 17.39 1.54808 18.8 2.20212 19.91C2.85617 21.02 4.14413 21.63 5.83458 21.63H18.7142C20.4047 21.63 21.6926 21.02 22.3467 19.91C23.0007 18.8 22.9101 17.38 22.0951 15.92ZM11.5197 9C11.5197 8.59 11.8618 8.25 12.2744 8.25C12.6869 8.25 13.0291 8.59 13.0291 9V14C13.0291 14.41 12.6869 14.75 12.2744 14.75C11.8618 14.75 11.5197 14.41 11.5197 14V9ZM12.9888 17.71C12.9385 17.75 12.8882 17.79 12.8379 17.83C12.7775 17.87 12.7171 17.9 12.6568 17.92C12.5964 17.95 12.536 17.97 12.4656 17.98C12.4052 17.99 12.3348 18 12.2744 18C12.214 18 12.1436 17.99 12.0732 17.98C12.0128 17.97 11.9524 17.95 11.892 17.92C11.8317 17.9 11.7713 17.87 11.7109 17.83C11.6606 17.79 11.6103 17.75 11.56 17.71C11.3789 17.52 11.2682 17.26 11.2682 17C11.2682 16.74 11.3789 16.48 11.56 16.29C11.6103 16.25 11.6606 16.21 11.7109 16.17C11.7713 16.13 11.8317 16.1 11.892 16.08C11.9524 16.05 12.0128 16.03 12.0732 16.02C12.204 15.99 12.3448 15.99 12.4656 16.02C12.536 16.03 12.5964 16.05 12.6568 16.08C12.7171 16.1 12.7775 16.13 12.8379 16.17C12.8882 16.21 12.9385 16.25 12.9888 16.29C13.1699 16.48 13.2806 16.74 13.2806 17C13.2806 17.26 13.1699 17.52 12.9888 17.71Z" fill="#F9D94A" />
+                    </svg>
+                  </span>
+                  <p class="text-lg leading-7 -tracking-[0.078px] flex-1 max-w-[620px] w-full">No real data about a real person has been used in this article. Target URLs have been modified by hand to not reveal and personal information of a real person.</p>
+                </div>
+                <!-- alert box -->
+
+                <!-- blog details single block -->
+                <div class="mt-10">
+                  <h2 class="text-font-32 font-medium -tracking-[0.084px] mb-5 max-w-[596px] w-full">Why Is Scraping TruePeopleSearch.com Difficult?</h2>
+                  <div class="space-y-3 max-w-[740px]">
+                    <p class="text-black text-lg leading-7 -tracking-[0.078px]">TruePeopleSearch is built to look lightweight and straightforward, but under the hood it’s just as aggressive as any high-security site when it comes to stopping scrapers.</p>
+                    <p class="text-black text-lg leading-7 -tracking-[0.078px]">There are two main reasons it’s hard to work with:</p>
+                  </div>
+                  <div class="space-y-3 max-w-[694px] mt-3">
+                    <p class="text-black text-lg leading-7 -tracking-[0.078px]">The entire site is geofenced. If you try to access it from a non-US IP, you won’t even see a loading screen.</p>
+                    <p class="text-black text-lg leading-7 -tracking-[0.078px]">It just cuts you off. <span class="font-medium">Rude!</span></p>
+                  </div>
+                </div>
+                <!-- blog details single block -->
+
+                <!-- blog details single block -->
+                <div class="mt-10">
+                  <h2 class="text-font-32 font-medium -tracking-[0.084px] mb-5 max-w-[596px] w-full">Georestricted to the US</h2>
+                  <div class="relative">
+                    <img src="images/georestricted-img.jpg" alt="georestricted-img" class="w-full min-h-[190px] rounded-2xl border border-custom-gray-100">
+                    <button type="button" class="absolute top-6 right-6 w-8 h-8 flex items-center justify-center rounded-full bg-white custom__inner-shadow custom__drop-shadow">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.9987 14.6666H9.9987C13.332 14.6666 14.6654 13.3333 14.6654 9.99992V5.99992C14.6654 2.66659 13.332 1.33325 9.9987 1.33325H5.9987C2.66536 1.33325 1.33203 2.66659 1.33203 5.99992V9.99992C1.33203 13.3333 2.66536 14.6666 5.9987 14.6666Z" stroke="#171717" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 4L4 12" stroke="#171717" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M11.9987 6.66667V4H9.33203" stroke="#171717" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M4 9.33325V11.9999H6.66667" stroke="#171717" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- blog details single block -->
+
+                <!-- blog details single block -->
+                <div class="mt-10">
+                  <h2 class="text-font-32 font-medium -tracking-[0.084px] mb-5 max-w-[596px] w-full">Protected by Cloudflare</h2>
+                  <div class="space-y-3 max-w-[732px] mb-10">
+                    <p class="text-black text-lg leading-7 -tracking-[0.078px]">TruePeopleSearch uses Cloudflare to protect its pages.</p>
+                    <p class="text-black text-lg leading-7 -tracking-[0.078px]">That means your script has to pass JavaScript challenges, spoof fingerprint headers, and sometimes even handle CAPTCHA forms.</p>
+                    <p class="text-black text-lg leading-7 -tracking-[0.078px]">If you’re just using a library like <span class="font-medium relative after:w-7.5 after:h-0.5 after:bg-custom-yellow after:absolute after:left-0 after:-bottom-px">requests</span> or <span class="font-medium relative after:w-7.5 after:h-0.5 after:bg-custom-yellow after:absolute after:left-0 after:-bottom-px">httpx</span>, your scraper is going to stall out before it ever sees the page content.</p>
+                  </div>
+                  <div class="relative">
+                    <video class="w-full aspect-[1.974/1] min-h-[190px] rounded-2xl border border-custom-gray-100" autoplay muted loop playsinline>
+                      <source src="videos/blog-video.mp4" type="video/mp4">
+                    </video>
+                    <button type="button" class="absolute top-6 right-6 w-8 h-8 flex items-center justify-center rounded-full bg-white custom__inner-shadow custom__drop-shadow">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.9987 14.6666H9.9987C13.332 14.6666 14.6654 13.3333 14.6654 9.99992V5.99992C14.6654 2.66659 13.332 1.33325 9.9987 1.33325H5.9987C2.66536 1.33325 1.33203 2.66659 1.33203 5.99992V9.99992C1.33203 13.3333 2.66536 14.6666 5.9987 14.6666Z" stroke="#171717" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 4L4 12" stroke="#171717" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M11.9987 6.66667V4H9.33203" stroke="#171717" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M4 9.33325V11.9999H6.66667" stroke="#171717" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- blog details single block -->
+
+                <!-- blog details single block -->
+                <div class="mt-10">
+                  <h2 class="text-font-32 font-medium -tracking-[0.084px] mb-5 max-w-[596px] w-full">Sending a Request and Verifying Access</h2>
+                  <div class="space-y-3 max-w-[620px] mb-6">
+                    <p class="text-black text-lg leading-7 -tracking-[0.078px]">You’re fighting an active system that’s constantly analyzing your request and deciding whether it looks human or not.</p>
+                    <p class="text-black text-lg leading-7 -tracking-[0.078px]">And most of the time, it’ll say no.</p>
+                    <p class="text-black text-lg leading-7 -tracking-[0.078px]">Now let’s test the request.</p>
+                    <p class="text-black text-lg leading-7 -tracking-[0.078px]">We’ll send it through Scrape.do using two key parameters:</p>
+                    <ul class="list-disc pl-6">
+                      <li class="text-black text-lg leading-7 -tracking-[0.078px]"><span class="font-medium relative after:w-7.5 after:h-0.5 after:bg-custom-yellow after:absolute after:left-0 after:-bottom-px">geoCode=us</span> for US-only access,</li>
+                      <li class="text-black text-lg leading-7 -tracking-[0.078px]"><span class="font-medium relative after:w-7.5 after:h-0.5 after:bg-custom-yellow after:absolute after:left-0 after:-bottom-px">super=true</span> to switch to residential IPs that bypass detection.</li>
+                    </ul>
+                    <p class="text-black text-lg leading-7 -tracking-[0.078px]">Here’s the starting script:</p>
+                  </div>
+
+                  <div class="code-block-container p-4 rounded-2xl bg-custom-black-400">
+                    <div class="flex items-center justify-between gap-4 pl-2 md:pl-6 pr-4 pb-2 md:pb-4">
+                      <h6 class="text-white text-xs font-normal">python</h6>
+                      <button type="button" class="copy-code-btn inline-flex items-center gap-1.5 text-white text-[10px] font-normal">
+                        <span>Copy</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11.3998 1.3335H8.59984C6.54446 1.3335 5.5805 2.06289 5.37967 3.82617C5.33766 4.19506 5.64317 4.50016 6.01445 4.50016H7.39984C10.1998 4.50016 11.4998 5.80016 11.4998 8.60016V9.98556C11.4998 10.3568 11.8049 10.6623 12.1738 10.6203C13.9371 10.4195 14.6665 9.45555 14.6665 7.40016V4.60016C14.6665 2.26683 13.7332 1.3335 11.3998 1.3335Z" fill="white" />
+                          <path d="M7.3987 5.3335H4.5987C2.26536 5.3335 1.33203 6.26683 1.33203 8.60016V11.4002C1.33203 13.7335 2.26536 14.6668 4.5987 14.6668H7.3987C9.73203 14.6668 10.6654 13.7335 10.6654 11.4002V8.60016C10.6654 6.26683 9.73203 5.3335 7.3987 5.3335ZM8.19203 9.10016L5.7187 11.5735C5.62536 11.6668 5.50536 11.7135 5.3787 11.7135C5.25203 11.7135 5.13203 11.6668 5.0387 11.5735L3.7987 10.3335C3.61203 10.1468 3.61203 9.84683 3.7987 9.66016C3.98536 9.4735 4.28536 9.4735 4.47203 9.66016L5.37203 10.5602L7.51203 8.42016C7.6987 8.2335 7.9987 8.2335 8.18536 8.42016C8.37203 8.60683 8.3787 8.9135 8.19203 9.10016Z" fill="white" />
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="rounded-2xl bg-white/8 border border-[#C2C2C2]/30 p-8 overflow-auto">
+                      <pre class="text-[10px] leading-5.5 font-normal text-white text-left font-menlo whitespace-pre-line"><code class="code-block"><span class="text-[#FF79C6]">import</span> requests
+                          <span class="text-[#FF79C6]">import</span> urllib.parse
+
+                          <span class="text-custom-yellow">token</span> = <span class="text-white">"YOUR_TOKEN"</span>
+                          <span class="text-custom-yellow">targetUrl</span> = <span class="text-white">"https://httpbin.co/ip"</span>
+
+                          <span class="text-custom-yellow">encoded_url</span> = urllib.parse.quote(targetUrl)
+                          <span class="text-custom-yellow">url</span> = <span class="text-white">"http://api.scrape.do?token={}&url={}"</span>.format(token, encoded_url)
+                          <span class="text-custom-yellow">response</span> = requests.request(<span class="text-white">"GET"</span>, url)
+
+                          <span class="text-[#8BE9FD]">print</span>(response.text)
+                        </code></pre>
+                    </div>
+                  </div>
+
+                  <p class="text-black text-lg leading-7 -tracking-[0.078px] mt-6 mb-10">If everything is working correctly, you should see:</p>
+
+                  <div class="code-block-container p-4 rounded-2xl bg-custom-black-400">
+                    <div class="flex items-center justify-between gap-4 pl-2 md:pl-6 pr-4 pb-2 md:pb-4">
+                      <h6 class="text-white text-xs font-normal">python</h6>
+                      <button type="button" class="copy-code-btn inline-flex items-center gap-1.5 text-white text-[10px] font-normal">
+                        <span>Copy</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11.3998 1.3335H8.59984C6.54446 1.3335 5.5805 2.06289 5.37967 3.82617C5.33766 4.19506 5.64317 4.50016 6.01445 4.50016H7.39984C10.1998 4.50016 11.4998 5.80016 11.4998 8.60016V9.98556C11.4998 10.3568 11.8049 10.6623 12.1738 10.6203C13.9371 10.4195 14.6665 9.45555 14.6665 7.40016V4.60016C14.6665 2.26683 13.7332 1.3335 11.3998 1.3335Z" fill="white" />
+                          <path d="M7.3987 5.3335H4.5987C2.26536 5.3335 1.33203 6.26683 1.33203 8.60016V11.4002C1.33203 13.7335 2.26536 14.6668 4.5987 14.6668H7.3987C9.73203 14.6668 10.6654 13.7335 10.6654 11.4002V8.60016C10.6654 6.26683 9.73203 5.3335 7.3987 5.3335ZM8.19203 9.10016L5.7187 11.5735C5.62536 11.6668 5.50536 11.7135 5.3787 11.7135C5.25203 11.7135 5.13203 11.6668 5.0387 11.5735L3.7987 10.3335C3.61203 10.1468 3.61203 9.84683 3.7987 9.66016C3.98536 9.4735 4.28536 9.4735 4.47203 9.66016L5.37203 10.5602L7.51203 8.42016C7.6987 8.2335 7.9987 8.2335 8.18536 8.42016C8.37203 8.60683 8.3787 8.9135 8.19203 9.10016Z" fill="white" />
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="rounded-2xl bg-white/8 border border-[#C2C2C2]/30 p-8">
+                      <pre class="text-[10px] leading-5.5 font-normal text-white text-left font-menlo whitespace-pre-line"><code class="code-block"><span class="text-[#FF79C6]">
+                            << /span> Response [<span class="text-[#9747FF]">200</span>] <span class="text-[#FF79C6]">></span>
+                        </code></pre>
+                    </div>
+                  </div>
+
+                  <p class="text-black text-lg leading-7 -tracking-[0.078px] mt-8">Which means the page loaded successfully and you can start extracting data.</p>
+                </div>
+                <!-- blog details single block -->
+
+                <div class="mt-17 flex items-center gap-3">
+                  <span class="text-sm font-normal -tracking-[0.18px]">SHARE</span>
+                  <ul class="flex items-center gap-1">
+                    <li>
+                      <a href="#" class="flex items-center justify-center w-10 h-10 rounded-full border border-custom-black-400 hover:bg-white hover:shadow-lg transition-all duration-300">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_18_20144)">
+                            <path d="M12.6353 2.65313C12.2308 2.22153 11.815 1.80136 11.3834 1.39692C10.4687 0.540867 9.0996 0.528005 8.18495 1.3812C7.53184 1.99144 6.91445 2.63884 6.28135 3.26909C6.27706 3.27337 6.27563 3.27909 6.27277 3.28624C6.26991 3.29624 6.2742 3.30767 6.28278 3.31053C6.28849 3.31339 6.29278 3.31482 6.29707 3.31482C6.31993 3.31625 6.34423 3.31625 6.36709 3.31625C6.92732 3.3091 7.45467 3.43058 7.94486 3.70354C8.02346 3.74785 8.06062 3.71498 8.10921 3.66496C8.47078 3.30196 8.83092 2.93753 9.19535 2.57881C9.53977 2.23868 10.01 2.24011 10.3515 2.58024C10.7088 2.93467 11.0647 3.29052 11.4177 3.64638C11.7521 3.98365 11.7578 4.45527 11.4219 4.79254C10.3244 5.90012 9.22108 7.00199 8.1135 8.10099C8.01918 8.19532 7.88627 8.26963 7.75907 8.30822C7.44323 8.4054 7.17741 8.29393 6.95018 8.06526C6.65578 7.768 6.35995 7.4736 6.06984 7.18349C5.97837 7.09202 5.83117 7.09202 5.7397 7.18349L4.96797 7.95665C4.87651 8.04812 4.87651 8.19532 4.96654 8.28821C5.28095 8.60976 5.59679 8.93847 5.92406 9.25573C6.83156 10.1361 8.28642 10.1304 9.1782 9.26145C9.5412 8.90703 9.90135 8.54974 10.2586 8.1896C11.0575 7.38785 11.8678 6.59897 12.6467 5.77865C13.4542 4.92545 13.4413 3.51347 12.6353 2.65313ZM7.68762 10.6863C7.67475 10.6849 7.66332 10.6849 7.65046 10.6849C7.08166 10.6949 6.54288 10.5734 6.04554 10.2961C5.96408 10.2504 5.92835 10.2904 5.88119 10.3376C5.52248 10.6963 5.16519 11.0579 4.80505 11.4137C4.44777 11.7667 3.98473 11.7639 3.62887 11.4094C3.29588 11.0779 2.96432 10.7449 2.63134 10.4119C2.21689 9.99746 2.21546 9.56014 2.62991 9.14569L5.80973 5.96587C5.8426 5.93299 5.87547 5.90012 5.90977 5.86868C6.1613 5.64145 6.51001 5.59 6.80298 5.75149C6.90302 5.8058 6.99163 5.88726 7.07309 5.96872C7.36177 6.25169 7.64617 6.53895 7.92771 6.82049C8.01918 6.91195 8.16638 6.91195 8.25784 6.82049C8.51937 6.55896 8.77948 6.30028 9.04815 6.03303C9.13962 5.94157 9.13819 5.7958 9.04672 5.70433C8.67801 5.33705 8.31644 4.95832 7.92057 4.61962C7.05737 3.8779 5.71255 3.91077 4.88079 4.68822C4.28913 5.24272 3.72605 5.82438 3.15297 6.39746C2.5513 7.00056 1.9382 7.59222 1.35655 8.21532C0.534794 9.09424 0.546227 10.4791 1.36941 11.3609C1.76957 11.7896 2.18545 12.204 2.61276 12.6056C3.5174 13.456 4.89223 13.4731 5.79973 12.6271C6.4557 12.014 7.07737 11.3637 7.71477 10.7306C7.71906 10.7263 7.72049 10.7192 7.72191 10.7106C7.72191 10.6992 7.70762 10.6877 7.68762 10.6863Z" fill="#2E2E2E" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_18_20144">
+                              <rect width="13.2258" height="13.2258" fill="white" transform="translate(0.332031 0.387207)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="flex items-center justify-center w-10 h-10 rounded-full border border-custom-black-400 hover:bg-white hover:shadow-lg transition-all duration-300">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_18_20148)">
+                            <path d="M7.32301 1C3.95551 1 1.22603 3.73091 1.22603 7.09699C1.22603 8.24858 1.54647 9.32721 2.10009 10.2471L1 13.5173L4.37609 12.4358C5.25015 12.9179 6.25296 13.1954 7.32301 13.1954C10.6905 13.1954 13.42 10.4645 13.42 7.09842C13.42 3.73234 10.6905 1 7.32301 1ZM10.31 9.2099C10.187 9.55896 9.69629 9.84936 9.30432 9.93233C9.03681 9.98955 8.68632 10.0353 7.50755 9.54751C5.99976 8.92379 5.02985 7.39168 4.95546 7.29297C4.8825 7.19283 4.34605 6.48185 4.34605 5.74655C4.34605 5.01125 4.72085 4.65218 4.87106 4.49912C4.99408 4.3718 5.20008 4.31601 5.39464 4.31601C5.45901 4.31601 5.5148 4.31887 5.5663 4.32173C5.71651 4.32745 5.79233 4.33746 5.89247 4.57493C6.01549 4.87249 6.31734 5.60779 6.3531 5.68361C6.3903 5.75943 6.42606 5.861 6.37456 5.96113C6.32592 6.06413 6.28444 6.10848 6.20862 6.19717C6.1328 6.28444 6.06127 6.35024 5.98545 6.44323C5.91536 6.52477 5.83811 6.61203 5.92537 6.76367C6.01263 6.91102 6.31448 7.40312 6.75795 7.79652C7.33017 8.3058 7.79509 8.46888 7.96104 8.53898C8.08406 8.59048 8.23284 8.5776 8.32297 8.48176C8.43741 8.3573 8.57903 8.15273 8.72352 7.95102C8.82652 7.80654 8.95527 7.78794 9.09117 7.83944C9.22993 7.88665 9.96237 8.25001 10.114 8.3244C10.2642 8.40021 10.3644 8.43598 10.4001 8.49892C10.4345 8.56187 10.4345 8.86085 10.31 9.2099Z" fill="#2E2E2E" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_18_20148">
+                              <rect width="13.2258" height="13.2258" fill="white" transform="translate(0.332031 0.387207)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="flex items-center justify-center w-10 h-10 rounded-full border border-custom-black-400 hover:bg-white hover:shadow-lg transition-all duration-300">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_18_20152)">
+                            <path d="M10.25 1.61572H3.75C1.8 1.61572 0.5 2.49808 0.5 4.5569V8.67455C0.5 10.7334 1.8 11.6157 3.75 11.6157H10.25C12.2 11.6157 13.5 10.7334 13.5 8.67455V4.5569C13.5 2.49808 12.2 1.61572 10.25 1.61572ZM10.5555 5.19808L8.521 6.66866C8.092 6.98043 7.546 7.13337 7 7.13337C6.454 7.13337 5.9015 6.98043 5.479 6.66866L3.4445 5.19808C3.2365 5.04513 3.204 4.76278 3.3665 4.57455C3.5355 4.38631 3.841 4.35102 4.049 4.50396L6.0835 5.97455C6.5775 6.33337 7.416 6.33337 7.91 5.97455L9.9445 4.50396C10.1525 4.35102 10.4645 4.38043 10.627 4.57455C10.796 4.76278 10.7635 5.04513 10.5555 5.19808Z" fill="#2E2E2E" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_18_20152">
+                              <rect width="13.2258" height="13.2258" fill="white" transform="translate(0.332031 0.387207)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- blog details body -->
+
+              <div class="max-lg:hidden shrink-0 w-60 xl:w-72.5 pt-4">
+                <!-- blog author -->
+                <div class="mb-16">
+                  <div class="flex items-center gap-4">
+                    <img src="images/user-avatar.jpg" alt="author image" class="shrink-0 w-14 h-14 rounded-lg object-cover">
+                    <div>
+                      <h6 class="text-base font-medium -tracking-[0.084px]">Emily Carter</h6>
+                      <p class="text-font-14 font-normal opacity-70">Full Stack Developer</p>
+                    </div>
+                  </div>
+                  <div class="ml-18 inline-flex items-center gap-2.5 px-2.5 py-2 rounded-4xl border border-custom-gray-100 mt-4">
+                    <a href="#" class="inline-block"><img src="images/github.svg" alt="github" class="w-3 aspect-square"></a>
+                    <a href="#" class="inline-block"><img src="images/linkedin-2.svg" alt="linkedin" class="w-3 aspect-square"></a>
+                    <a href="#" class="inline-block"><img src="images/medium.svg" alt="medium" class="w-3 aspect-square"></a>
+                  </div>
+                </div>
+                <!-- blog author -->
+
+                <!-- table of contents -->
+                <div class="pl-5 xl:pl-8 py-6 xl:pt-8 xl-10 pr-3 xl:pr-6 bg-custom-black-400 shadow-[0_48px_48px_-24px_rgba(51,51,51,0.04),_0_-1px_1px_-0.5px_rgba(51,51,51,0.06)_inset] rounded-2xl sticky top-5 right-0">
+                  <h6 class="text-base leading-7 font-medium -tracking-[0.084px] text-[#FFFEFE] mb-6">Table of Contents</h6>
+                  <ul class="blog-nav">
+                    <li class="blog-nav__item active">
+                      <a href="#" class="blog-nav__link block text-[#FFFEFE] relative text-sm font-normal -tracking-[0.18px] pl-4 pt-1 pb-2 before:w-0.5 before:h-full before:bg-white/10 before:absolute before:left-0 before:top-0 before:transition-all before:duration-300 transition-all duration-300 group"><span class="opacity-60 group-hover:opacity-100 transition-all duration-300">Why Is Scraping TruePeopleSearch.com Difficult?</span></a>
+                    </li>
+                    <li class="blog-nav__item">
+                      <a href="#" class="blog-nav__link block text-[#FFFEFE] relative text-sm font-normal -tracking-[0.18px] pl-4 py-2 before:w-0.5 before:h-full before:bg-white/10 before:absolute before:left-0 before:top-0 before:transition-all before:duration-300 transition-all duration-300 group"><span class="opacity-60 group-hover:opacity-100 transition-all duration-300">Creating a Basic TruePeopleSearch Scraper</span></a>
+                    </li>
+                    <li class="blog-nav__item">
+                      <a href="#" class="blog-nav__link block text-[#FFFEFE] relative text-font-13 leading-4.5 font-normal -tracking-[0.18px] pl-6.5 py-1.5 before:w-0.5 before:h-full before:bg-white/10 before:absolute before:left-0 before:top-0 before:transition-all before:duration-300 transition-all duration-300 group"><span class="opacity-60 group-hover:opacity-100 transition-all duration-300">Prerequisites</span></a>
+                    </li>
+                    <li class="blog-nav__item">
+                      <a href="#" class="blog-nav__link block text-[#FFFEFE] relative text-font-13 leading-4.5 font-normal -tracking-[0.18px] pl-6.5 py-1.5 before:w-0.5 before:h-full before:bg-white/10 before:absolute before:left-0 before:top-0 before:transition-all before:duration-300 transition-all duration-300 group"><span class="opacity-60 group-hover:opacity-100 transition-all duration-300">Sending a Request and Verifying Access</span></a>
+                    </li>
+                    <li class="blog-nav__item">
+                      <a href="#" class="blog-nav__link block text-[#FFFEFE] relative text-font-13 leading-4.5 font-normal -tracking-[0.18px] pl-6.5 py-1.5 before:w-0.5 before:h-full before:bg-white/10 before:absolute before:left-0 before:top-0 before:transition-all before:duration-300 transition-all duration-300 group"><span class="opacity-60 group-hover:opacity-100 transition-all duration-300">Extracting Name and Age</span></a>
+                    </li>
+                    <li class="blog-nav__item">
+                      <a href="#" class="blog-nav__link block text-[#FFFEFE] relative text-font-13 leading-4.5 font-normal -tracking-[0.18px] pl-6.5 py-1.5 before:w-0.5 before:h-full before:bg-white/10 before:absolute before:left-0 before:top-0 before:transition-all before:duration-300 transition-all duration-300 group"><span class="opacity-60 group-hover:opacity-100 transition-all duration-300">Extracting Address, City, and State</span></a>
+                    </li>
+                    <li class="blog-nav__item">
+                      <a href="#" class="blog-nav__link block text-[#FFFEFE] relative text-font-13 leading-4.5 font-normal -tracking-[0.18px] pl-6.5 py-1.5 before:w-0.5 before:h-full before:bg-white/10 before:absolute before:left-0 before:top-0 before:transition-all before:duration-300 transition-all duration-300 group"><span class="opacity-60 group-hover:opacity-100 transition-all duration-300">Extracting Phone Number</span></a>
+                    </li>
+                    <li class="blog-nav__item">
+                      <a href="#" class="blog-nav__link block text-[#FFFEFE] relative text-font-13 leading-4.5 font-normal -tracking-[0.18px] pl-6.5 py-1.5 before:w-0.5 before:h-full before:bg-white/10 before:absolute before:left-0 before:top-0 before:transition-all before:duration-300 transition-all duration-300 group"><span class="opacity-60 group-hover:opacity-100 transition-all duration-300">Final Code and Output</span></a>
+                    </li>
+                    <li class="blog-nav__item">
+                      <a href="#" class="blog-nav__link block text-[#FFFEFE] relative text-sm font-normal -tracking-[0.18px] pl-4 pt-2 before:w-0.5 before:h-full before:bg-white/10 before:absolute before:left-0 before:top-0 before:transition-all before:duration-300 transition-all duration-300 group"><span class="opacity-60 group-hover:opacity-100 transition-all duration-300">Conclusion</span></a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- table of contents -->
+
+                <div class="mt-4 p-5 xl:p-7 xl:pb-8 rounded-2xl bg-custom-yellow">
+                  <h4 class="text-font-24 font-normal mb-4 max-w-50">Reliable, Scalable, Unstoppable Web&nbsp;Scraping</h4>
+                  <a href="#" class="custom__btn w-full justify-between">
+                    START FREE TRIAL
+                    <span class="custom__btn-icon hidden md:flex">
+                      <svg class="w-[16px] h-[10px] text-inherit" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.1398 0.941847C11.8709 0.675256 11.4367 0.677193 11.1701 0.946173C10.9035 1.21515 10.9055 1.64932 11.1744 1.91591L12.7863 3.51345C13.4405 4.1618 13.8892 4.60801 14.1928 4.98609C14.2915 5.10896 14.3685 5.21713 14.4283 5.31459L0.685714 5.31459C0.307005 5.31459 0 5.6216 0 6.00031C0 6.37902 0.307005 6.68602 0.685714 6.68602L14.4283 6.68602C14.3685 6.78348 14.2915 6.89165 14.1928 7.01452C13.8892 7.3926 13.4405 7.83881 12.7863 8.48716L11.1744 10.0847C10.9055 10.3513 10.9035 10.7855 11.1701 11.0544C11.4367 11.3234 11.8709 11.3254 12.1398 11.0588L13.7808 9.43244C14.3988 8.81992 14.9039 8.31931 15.2621 7.87326C15.6346 7.40942 15.9043 6.93862 15.9763 6.37348C15.9921 6.24959 16 6.12495 16 6.00031C16 5.87567 15.9921 5.75103 15.9763 5.62713C15.9043 5.062 15.6346 4.5912 15.2621 4.12736C14.9039 3.6813 14.3988 3.18068 13.7807 2.56816L12.1398 0.941847Z" fill="currentColor"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Blog Details Area -->
+
+      <!-- FAQ Area -->
+      <section class="md:pt-7 pb-20 md:pb-[172px] bg-custom-white-400 rounded-[32px] md:rounded-[56px] relative -bottom-18">
+        <div class="wrapper">
+          <div class="w-full max-w-[1005px] mx-auto flex flex-col lg:flex-row lg:items-start gap-10 lg:gap-[118px]">
+            <div class="w-full max-w-[322px]">
+              <h3 class="text-font-16 text-custom-gray-500">F.A.Q</h3>
+
+              <h2 class="text-font-40 tracking-tight mt-1 md:mt-3">
+                Frequently Asked Questions.
+              </h2>
+
+              <p class="text-font-16 font-normal max-w-[300px] mt-2 md:mt-4">
+                Get answers to commonly asked questions.
+              </p>
+            </div>
+
+            <div class="flex-1">
+              <div class="custom__accodion custom__accodion--faq">
+                <!-- Accordion Item -->
+                <div class="accordion__item">
+                  <button class="accordion__button">
+                    <span class="text-font-16 font-normal">Can I cancel anytime?</span>
+
+                    <div class="accordion__icon">
+                      <img class="accordion__icon-plus" src="images/faq-plus.svg" alt="plus" />
+                      <img class="accordion__icon-minus" src="images/faq-minus.svg" alt="minus" />
+                    </div>
+                  </button>
+
+                  <div class="accordion__content">
+                    <div class="space-y-4 pt-3 pb-2">
+                      <p>
+                        Though it’s rare, we do offer refunds within the first
+                        three days of purchase. Just make sure to review our
+                        refunds policy for details.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Accordion Item -->
+
+                <!-- Accordion Item -->
+                <div class="accordion__item">
+                  <button class="accordion__button">
+                    <span class="text-font-16 font-normal">Do you have a free trial ?</span>
+
+                    <div class="accordion__icon">
+                      <img class="accordion__icon-plus" src="images/faq-plus.svg" alt="plus" />
+                      <img class="accordion__icon-minus" src="images/faq-minus.svg" alt="minus" />
+                    </div>
+                  </button>
+
+                  <div class="accordion__content">
+                    <div class="space-y-4 pt-3 pb-2">
+                      <p>
+                        Though it’s rare, we do offer refunds within the first
+                        three days of purchase. Just make sure to review our
+                        refunds policy for details.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Accordion Item -->
+
+                <!-- Accordion Item -->
+                <div class="accordion__item">
+                  <button class="accordion__button">
+                    <span class="text-font-16 font-normal">Can I get a refund if I'm not satisfied?</span>
+
+                    <div class="accordion__icon">
+                      <img class="accordion__icon-plus" src="images/faq-plus.svg" alt="plus" />
+                      <img class="accordion__icon-minus" src="images/faq-minus.svg" alt="minus" />
+                    </div>
+                  </button>
+
+                  <div class="accordion__content">
+                    <div class="space-y-4 pt-3 pb-2">
+                      <p>
+                        Though it’s rare, we do offer refunds within the first
+                        three days of purchase. Just make sure to review our
+                        refunds policy for details.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Accordion Item -->
+
+                <!-- Accordion Item -->
+                <div class="accordion__item">
+                  <button class="accordion__button">
+                    <span class="text-font-16 font-normal">Do I need a credit card to start the free trial?</span>
+
+                    <div class="accordion__icon">
+                      <img class="accordion__icon-plus" src="images/faq-plus.svg" alt="plus" />
+                      <img class="accordion__icon-minus" src="images/faq-minus.svg" alt="minus" />
+                    </div>
+                  </button>
+
+                  <div class="accordion__content">
+                    <div class="space-y-4 pt-3 pb-2">
+                      <p>
+                        Though it’s rare, we do offer refunds within the first
+                        three days of purchase. Just make sure to review our
+                        refunds policy for details.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Accordion Item -->
+
+                <!-- Accordion Item -->
+                <div class="accordion__item">
+                  <button class="accordion__button">
+                    <span class="text-font-16 font-normal">Do I get charged for the failed requests?</span>
+
+                    <div class="accordion__icon">
+                      <img class="accordion__icon-plus" src="images/faq-plus.svg" alt="plus" />
+                      <img class="accordion__icon-minus" src="images/faq-minus.svg" alt="minus" />
+                    </div>
+                  </button>
+
+                  <div class="accordion__content">
+                    <div class="space-y-4 pt-3 pb-2">
+                      <p>
+                        Though it’s rare, we do offer refunds within the first
+                        three days of purchase. Just make sure to review our
+                        refunds policy for details.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Accordion Item -->
+
+                <!-- Accordion Item -->
+                <div class="accordion__item">
+                  <button class="accordion__button">
+                    <span class="text-font-16 font-normal">Can I see my usage data?</span>
+
+                    <div class="accordion__icon">
+                      <img class="accordion__icon-plus" src="images/faq-plus.svg" alt="plus" />
+                      <img class="accordion__icon-minus" src="images/faq-minus.svg" alt="minus" />
+                    </div>
+                  </button>
+
+                  <div class="accordion__content">
+                    <div class="space-y-4 pt-3 pb-2">
+                      <p>
+                        Though it’s rare, we do offer refunds within the first
+                        three days of purchase. Just make sure to review our
+                        refunds policy for details.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Accordion Item -->
+              </div>
+
+              <a href="#" class="custom__btn custom__btn--sm custom__shadow--black-btn gap-1.5 mt-5 min-w-[168px]">See More
+                <span class="font-inter text-custom-white/30">-</span>
+                <span class="text-custom-white/70">FAQs</span>
+
+                <img class="w-5" src="images/arrow-right-small.svg" alt="arrow right small" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ Area -->
+    </main>
+    <!-- Main content -->
+
+    <!-- Footer Area -->
+    <footer class="pt-[120px] md:pt-[170px] pb-12 md:pb-14.5 bg-custom-black">
+      <div class="wrapper">
+        <div class="flex flex-col xl:flex-row">
+          <div class="flex-1 border-l border-custom-gray-100/20 first-of-type:border-l-0 xl:px-6 xl:first-of-type:pl-0">
+            <div class="flex items-center justify-between xl:justify-start gap-8">
+              <a href="#" class="w-16">
+                <img src="images/footer-logo.svg" alt="footer logo" />
+              </a>
+
+              <ul class="flex items-center gap-2.5">
+                <li>
+                  <a href="#" class="w-10 h-10 border border-custom-gray-100 rounded-full flex items-center justify-center">
+                    <img class="w-4" src="images/x-twitter.svg" alt="x twitter" />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="w-10 h-10 border border-custom-gray-100 rounded-full flex items-center justify-center">
+                    <img class="w-4" src="images/linkedin.svg" alt="linkedin" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Only Mobile Accordions -->
+            <div class="custom__accodion custom__accodion--common custom__accodion--footer mt-12 xl:hidden">
+              <!-- Accordion Item -->
+              <div class="accordion__item">
+                <button class="accordion__button text-custom-white">
+                  <span class="text-font-16 font-normal">Company</span>
+
+                  <div class="accordion__icon">
+                    <img src="images/accordion-arrow.svg" alt="arrow" />
+                  </div>
+                </button>
+
+                <div class="accordion__content">
+                  <div class="space-y-4 pt-4">
+                    <ul class="space-y-3.5">
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Support</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Sales</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Blog</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Support</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Features</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Support</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Features</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion Item -->
+
+              <!-- Accordion Item -->
+              <div class="accordion__item">
+                <button class="accordion__button text-custom-white">
+                  <span class="text-font-16 font-normal">Terms of Use</span>
+
+                  <div class="accordion__icon">
+                    <img src="images/accordion-arrow.svg" alt="arrow" />
+                  </div>
+                </button>
+
+                <div class="accordion__content">
+                  <div class="space-y-4 pt-4">
+                    <ul class="space-y-3.5">
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Term of Use</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Privacy Policy</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Affiliate Program</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion Item -->
+
+              <!-- Accordion Item -->
+              <div class="accordion__item">
+                <button class="accordion__button text-custom-white">
+                  <span class="text-font-16 font-normal">Web Scraping</span>
+
+                  <div class="accordion__icon">
+                    <img src="images/accordion-arrow.svg" alt="arrow" />
+                  </div>
+                </button>
+
+                <div class="accordion__content">
+                  <div class="space-y-4 pt-4">
+                    <ul class="space-y-3.5">
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping is Legal?</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping Proxies</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Rotating Proxy</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Search Engine Scraping</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion Item -->
+
+              <!-- Accordion Item -->
+              <div class="accordion__item">
+                <button class="accordion__button text-custom-white">
+                  <span class="text-font-16 font-normal">Use Cases</span>
+
+                  <div class="accordion__icon">
+                    <img src="images/accordion-arrow.svg" alt="arrow" />
+                  </div>
+                </button>
+
+                <div class="accordion__content">
+                  <div class="space-y-4 pt-4">
+                    <ul class="space-y-3.5">
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Python</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in NodeJS</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Java</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in PHP</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Python</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in NodeJS</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Java</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in PHP</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Python</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in NodeJS</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Java</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in PHP</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion Item -->
+
+              <!-- Accordion Item -->
+              <div class="accordion__item">
+                <button class="accordion__button text-custom-white">
+                  <span class="text-font-16 font-normal">Use Cases</span>
+
+                  <div class="accordion__icon">
+                    <img src="images/accordion-arrow.svg" alt="arrow" />
+                  </div>
+                </button>
+
+                <div class="accordion__content">
+                  <div class="space-y-4 pt-4">
+                    <ul class="space-y-3.5">
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Python</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in NodeJS</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Java</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in PHP</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Python</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in NodeJS</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Java</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in PHP</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Python</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in NodeJS</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion Item -->
+            </div>
+            <!-- Only Mobile Accordions -->
+
+            <div class="xl:space-y-6 mt-8 xl:mt-12 w-full md:max-w-[305px] mx-auto xl:mx-0">
+              <div class="grid grid-cols-3 gap-0 border-b border-custom-gray-100/20 last-of-type:border-b-0 xl:border-b-0 pb-4.5 xl:pb-0">
+                <img class="w-fit h-[71px] object-contain" src="images/footer-badge-1.png" alt="footer badge" />
+                <img class="w-fit h-[71px] object-contain" src="images/footer-badge-2.png" alt="footer badge" />
+                <img class="w-fit h-[71px] object-contain" src="images/footer-badge-3.png" alt="footer badge" />
+              </div>
+
+              <div class="grid grid-cols-3 gap-0 border-b border-custom-gray-100/20 last-of-type:border-b-0 xl:border-b-0 pt-4.5 xl:pt-0">
+                <img class="w-fit h-[71px] object-contain" src="images/footer-badge-4.png" alt="footer badge" />
+                <img class="w-fit h-[71px] object-contain" src="images/footer-badge-5.png" alt="footer badge" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Only Desktop Items -->
+          <div class="hidden xl:block w-full max-w-[220px] border-l border-custom-gray-100/20 first-of-type:border-l-0 px-6 first-of-type:pl-0 space-y-17">
+            <div class="space-y-2.5">
+              <h3 class="text-font-14 text-custom-white">Company</h3>
+
+              <ul class="space-y-2.5">
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Support</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Sales</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Blog</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Support</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Features</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Support</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Features</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="space-y-2.5">
+              <h3 class="text-font-14 text-custom-white">Terms of Use</h3>
+
+              <ul class="space-y-2.5">
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Term of Use</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Affiliate Program</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="hidden xl:block w-full max-w-[240px] border-l border-custom-gray-100/20 first-of-type:border-l-0 px-6 first-of-type:pl-0">
+            <div class="space-y-2.5">
+              <h3 class="text-font-14 text-custom-white">Web Scraping</h3>
+
+              <ul class="space-y-2.5">
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping is Legal?</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping Proxies</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Rotating Proxy</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Search Engine Scraping</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="hidden xl:block w-full max-w-[252px] border-l border-custom-gray-100/20 first-of-type:border-l-0 px-6 first-of-type:pl-0">
+            <div class="space-y-2.5">
+              <h3 class="text-font-14 text-custom-white">Use Cases</h3>
+
+              <ul class="space-y-2.5">
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Python</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in NodeJS</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Java</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in PHP</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Python</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in NodeJS</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Java</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in PHP</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Python</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in NodeJS</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Java</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in PHP</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="hidden xl:block w-full max-w-[230px] border-l border-custom-gray-100/20 first-of-type:border-l-0 px-6 first-of-type:pl-0">
+            <div class="space-y-2.5">
+              <h3 class="text-font-14 text-custom-white">Use Cases</h3>
+
+              <ul class="space-y-2.5">
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Python</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in NodeJS</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Java</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in PHP</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Python</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in NodeJS</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Java</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in PHP</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Python</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in NodeJS</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Only Desktop Items -->
+        </div>
+
+        <div class="mt-10 xl:mt-20 flex flex-col-reverse md:flex-row items-center md:justify-between gap-5 md:gap-4">
+          <p class="text-font-12 text-custom-gray-500">
+            Copyright © 2020 - 2025 Scrape.do | PACKEND, LLC
+          </p>
+
+          <ul class="flex items-center gap-4">
+            <li>
+              <a href="#" class="w-fit h-7">
+                <img src="images/mastercard.svg" alt="mastercard" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="w-fit h-7">
+                <img src="images/visa.svg" alt="visa" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Area -->
+
+    <!-- JS CDN Link -->
+    <script>
+      const items = document.querySelectorAll('.blog-nav__item');
+
+      items.forEach((item, index) => {
+        item.querySelector('.blog-nav__link').addEventListener('click', function (e) {
+          e.preventDefault(); // Remove if links should navigate
+
+          items.forEach(i => i.classList.remove('active', 'above-active'));
+
+          // Set above-active on all items before the clicked one
+          for (let i = 0; i < index; i++) {
+            items[i].classList.add('above-active');
+          }
+
+          // Set active on the clicked one
+          items[index].classList.add('active');
+        });
+      });
+
+      // Set initial active
+      // items[1].classList.add('active');
+      // for (let i = 0; i < 1; i++) {
+      //   items[i].classList.add('above-active');
+      // }
+    </script>
+
+    <script>
+      document.querySelectorAll('.copy-code-btn').forEach(button => {
+        button.addEventListener('click', () => {
+          const codeBlock = button.closest('.code-block-container').querySelector('.code-block');
+          if (!codeBlock) return;
+
+          const text = codeBlock.innerText.trim();
+          navigator.clipboard.writeText(text).then(() => {
+            const span = button.querySelector('span');
+            const originalText = span.textContent;
+            span.textContent = 'Copied';
+            setTimeout(() => {
+              span.textContent = originalText;
+            }, 2000);
+          });
+        });
+      });
+    </script>
+
+
+
+    <script>
+      var copy = document.querySelector(".logosc-cslide").cloneNode(true);
+      document.querySelector(".logosc").appendChild(copy);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+  </body>
+
+</html>

@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Dynamic TLS Fingerprinting</title>
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <!-- Header Area -->
+    <header class="absolute top-0 left-0 w-full z-40">
+      <div class="w-full bg-custom-white">
+        <div class="wrapper">
+          <nav class="py-4.5 rounded-2xl custom__inner-shadow h-20 flex items-center justify-between gap-12">
+            <div class="flex items-center gap-15">
+              <a href="#" class="w-[150px] h-7">
+                <img src="images/logo.svg" alt="logo" />
+              </a>
+          
+              <ul class="hidden xl:flex items-center gap-4 border-custom-gray-100 pl-25">
+                <li><a href="#" class="nav__link">Pricing</a></li>
+                <li><a href="#" class="nav__link">Scraping API</a></li>
+                <li class="relative nav-item">
+                  <button class="nav__link submenu-toggle">
+                    Features
+                    <img class="w-4 h-auto transition-transform arrow-icon" src="images/arrow-down.svg" alt="arrow" />
+                  </button>
+          
+                  <div class="submenu hidden absolute left-0 top-full mt-7 w-[637px] bg-custom-white custom__shadow rounded-3xl z-50">
+                    <ul class="p-4 pr-5 rounded-3xl custom__inner-shadow grid grid-cols-2 gap-x-5.5">
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+          
+                            <span class="font-normal tracking-tight">Headless Browser</span>
+                          </div>
+          
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+          
+                            <span class="font-normal tracking-tight">Dynamic TLS Fingerprinting</span>
+                          </div>
+          
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+          
+                            <span class="font-normal tracking-tight">Header and User Agent Rotator</span>
+                          </div>
+          
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+          
+                            <span class="font-normal tracking-tight">Asynchronous Web Scraper</span>
+                          </div>
+          
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+          
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+          
+                            <span class="font-normal tracking-tight">Headless Browser</span>
+                          </div>
+          
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+          
+                            <span class="font-normal tracking-tight">Headless Browser</span>
+                          </div>
+          
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+          
+                            <span class="font-normal tracking-tight">Header and User Agent Rotator</span>
+                          </div>
+          
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+          
+                            <span class="font-normal tracking-tight">Headless Browser</span>
+                          </div>
+          
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="relative nav-item">
+                  <button class="nav__link submenu-toggle">
+                    Industries
+                    <img class="w-4 h-auto transition-transform arrow-icon" src="images/arrow-down.svg" alt="arrow" />
+                  </button>
+          
+                  <div class="submenu hidden absolute left-0 top-full mt-7 w-[637px] bg-custom-white custom__shadow rounded-3xl z-50">
+                    <ul class="p-4 pr-5 rounded-3xl custom__inner-shadow grid grid-cols-2 gap-x-5.5">
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+          
+                            <span class="font-normal tracking-tight">Headless Browser</span>
+                          </div>
+          
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+          
+                            <span class="font-normal tracking-tight">Dynamic TLS Fingerprinting</span>
+                          </div>
+          
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+          
+                            <span class="font-normal tracking-tight">Header and User Agent Rotator</span>
+                          </div>
+          
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+          
+                            <span class="font-normal tracking-tight">Asynchronous Web Scraper</span>
+                          </div>
+          
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+          
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+          
+                            <span class="font-normal tracking-tight">Headless Browser</span>
+                          </div>
+          
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+          
+                            <span class="font-normal tracking-tight">Headless Browser</span>
+                          </div>
+          
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+          
+                            <span class="font-normal tracking-tight">Header and User Agent Rotator</span>
+                          </div>
+          
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+          
+                            <span class="font-normal tracking-tight">Headless Browser</span>
+                          </div>
+          
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="relative nav-item">
+                  <button class="nav__link submenu-toggle">
+                    Company
+                    <img class="w-4 h-auto transition-transform arrow-icon" src="images/arrow-down.svg" alt="arrow" />
+                  </button>
+          
+                  <div class="submenu hidden absolute left-0 top-full mt-7 w-[637px] bg-custom-white custom__shadow rounded-3xl z-50">
+                    <ul class="p-4 pr-5 rounded-3xl custom__inner-shadow grid grid-cols-2 gap-x-5.5">
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+          
+                            <span class="font-normal tracking-tight">Headless Browser</span>
+                          </div>
+          
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+          
+                            <span class="font-normal tracking-tight">Dynamic TLS Fingerprinting</span>
+                          </div>
+          
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+          
+                            <span class="font-normal tracking-tight">Header and User Agent Rotator</span>
+                          </div>
+          
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+          
+                            <span class="font-normal tracking-tight">Asynchronous Web Scraper</span>
+                          </div>
+          
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+          
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+          
+                            <span class="font-normal tracking-tight">Headless Browser</span>
+                          </div>
+          
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+          
+                            <span class="font-normal tracking-tight">Headless Browser</span>
+                          </div>
+          
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+          
+                            <span class="font-normal tracking-tight">Header and User Agent Rotator</span>
+                          </div>
+          
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sub__menu-link">
+                          <div class="flex items-center gap-3.5">
+                            <div class="sub__menu-icon">
+                              <img class="w-4" src="images/browser.svg" alt="browser" />
+                            </div>
+          
+                            <span class="font-normal tracking-tight">Headless Browser</span>
+                          </div>
+          
+                          <img class="w-fit h-2.5" src="images/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#" class="nav__link">Blog</a></li>
+              </ul>
+            </div>
+          
+            <div class="flex items-center gap-6 xl:gap-10">
+              <button class="w-5 h-5">
+                <img src="images/search.svg" alt="search" />
+              </button>
+          
+              <button class="hamburger__btn w-6 h-auto xl:hidden">
+                <img src="images/menu.svg" alt="menu" />
+              </button>
+          
+              <a href="#" class="custom__btn-dashboard hidden xl:flex">Dashboard</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Header Area -->
+
+    <!-- Mobile Menu -->
+    <div class="mobile__menu fixed top-0 left-0 w-full h-screen z-50 bg-custom-black-400/97 overflow-auto hidden xl:hidden pb-16">
+      <nav class="py-6.5 px-4 md:px-10">
+        <div class="flex items-center justify-between gap-12">
+          <a href="#" class="w-[150px] h-7">
+            <img src="images/logo-light.svg" alt="logo light" />
+          </a>
+
+          <button class="hamburger__close-btn w-6 h-6">
+            <img src="images/close.svg" alt="close" />
+          </button>
+        </div>
+
+        <!-- Only Mobile Accordions -->
+        <div class="custom__accodion custom__accodion--common custom__accodion--navbar mt-10 md:mt-12">
+          <!-- Accordion Item -->
+          <div class="accordion__item">
+            <a href="#" class="text-custom-white text-font-16 font-normal">Pricing</a>
+          </div>
+          <!-- Accordion Item -->
+
+          <!-- Accordion Item -->
+          <div class="accordion__item">
+            <a href="#" class="text-custom-white text-font-16 font-normal">Scraping API</a>
+          </div>
+          <!-- Accordion Item -->
+
+          <!-- Accordion Item -->
+          <div class="accordion__item">
+            <button class="accordion__button text-custom-white">
+              <span class="text-font-16 font-normal">Features</span>
+
+              <div class="accordion__icon">
+                <img src="images/accordion-arrow.svg" alt="arrow" />
+              </div>
+            </button>
+
+            <div class="accordion__content">
+              <div class="space-y-4 pt-4">
+                <ul class="space-y-3.5">
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Anti-Bot Bypass</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Headless Browser</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">CAPTCHA Handling</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Header and User Agent Rotator</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Dynamic TLS Fingerprinting</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Asynchronous Web Scraper</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Automatic Proxy Rotation</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Geo-Targeting</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Accordion Item -->
+
+          <!-- Accordion Item -->
+          <div class="accordion__item">
+            <button class="accordion__button text-custom-white">
+              <span class="text-font-16 font-normal">Industries</span>
+
+              <div class="accordion__icon">
+                <img src="images/accordion-arrow.svg" alt="arrow" />
+              </div>
+            </button>
+
+            <div class="accordion__content">
+              <div class="space-y-4 pt-4">
+                <ul class="space-y-3.5">
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Anti-Bot Bypass</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Headless Browser</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">CAPTCHA Handling</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Header and User Agent Rotator</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Dynamic TLS Fingerprinting</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Asynchronous Web Scraper</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Automatic Proxy Rotation</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Geo-Targeting</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Accordion Item -->
+
+          <!-- Accordion Item -->
+          <div class="accordion__item">
+            <button class="accordion__button text-custom-white">
+              <span class="text-font-16 font-normal">Company</span>
+
+              <div class="accordion__icon">
+                <img src="images/accordion-arrow.svg" alt="arrow" />
+              </div>
+            </button>
+
+            <div class="accordion__content">
+              <div class="space-y-4 pt-4">
+                <ul class="space-y-3.5">
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Anti-Bot Bypass</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Headless Browser</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">CAPTCHA Handling</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Header and User Agent Rotator</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Dynamic TLS Fingerprinting</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Asynchronous Web Scraper</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Automatic Proxy Rotation</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-custom-white/50 hover:underline">Geo-Targeting</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Accordion Item -->
+
+          <!-- Accordion Item -->
+          <div class="accordion__item">
+            <a href="#" class="text-custom-white text-font-16 font-normal">Blog</a>
+          </div>
+          <!-- Accordion Item -->
+        </div>
+        <!-- Only Mobile Accordions -->
+
+        <div class="flex items-center justify-between xl:justify-start gap-8 mt-6">
+          <a href="#" class="w-16">
+            <img src="images/footer-logo.svg" alt="footer logo" />
+          </a>
+
+          <ul class="flex items-center gap-4">
+            <li>
+              <a href="#" class="w-10 h-10 border border-custom-gray-100 rounded-full flex items-center justify-center">
+                <img class="w-4" src="images/x-twitter.svg" alt="x twitter" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="w-10 h-10 border border-custom-gray-100 rounded-full flex items-center justify-center">
+                <img class="w-4" src="images/linkedin.svg" alt="linkedin" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- Mobile Menu -->
+
+    <!-- Main content -->
+    <main>
+      <!-- Hero Area -->
+      <section class="">
+        <div class="relative w-full">
+          <div class="wrapper relative z-20">
+            <div class="hero__block-pr block xl:flex items-center justify-between relative pt-28 md:pt-40 xl:pr-15 pb-10 lg:pb-22">
+
+              <div class="flex-1 w-full md:max-w-132.5 mx-auto xl:mx-0">
+                <div class="lg:flex block gap-4 lg:items-center text-center mb-5 justify-center xl:justify-start">
+                    <div class="w-14 h-14 rounded border border-custom-gray-100 flex items-center justify-center mx-auto lg:mx-0  mb-2 lg:mb-0">
+                      <div class="relative">
+                        <h4 class="text-font-20"><img class="max-w-6 max-h-6" src="images/location-add.svg" alt="Headless Browser"></h4>
+                      </div>
+                    </div>
+                    <p class="block md:mt-0 mt-2">Asynchronous Web Scraper</p>
+                </div>
+                <h1 class="text-font-40 lg:text-4xl leading-12 md:leading-11 md:font-semibold font-normal tracking-tighter text-center xl:text-left">
+                  <span>Submit. Queue. <br> Scrape. At Scale.</span>
+                </h1>
+
+                <div class="max-w-[415px] mx-auto xl:mx-0 text-center xl:text-left">
+                  <p class="text-font-16 mt-2 md:mt-5">
+                    Send a list of URLs and let Scrape.do handle the <b>rest; concurrency, retries, rendering, anti-bot bypass,</b> all fully managed on our side.
+                  </p>
+                </div>
+
+                <div class="flex flex-col md:flex-row md:items-center gap-4 mt-5.5 justify-center lg:justify-start">
+                  <a href="#" class="custom__btn custom__shadow--black-btn w-full md:w-fit">
+                    START SCRAPING FOR FREE
+                    <span class="custom__btn-icon hidden md:flex">
+                      <svg class="w-[29px] h-[29px] text-inherit" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.0486 8.53115C10.948 8.52759 10.8476 8.54435 10.7536 8.58042C10.6596 8.61649 10.5737 8.67113 10.5013 8.74108C10.4288 8.81103 10.3712 8.89486 10.3318 8.98757C10.2925 9.08028 10.2722 9.17996 10.2722 9.28068C10.2722 9.3814 10.2925 9.48109 10.3318 9.57379C10.3712 9.6665 10.4288 9.75033 10.5013 9.82028C10.5737 9.89024 10.6595 9.94487 10.7536 9.98094C10.8476 10.017 10.948 10.0338 11.0486 10.0302L17.1927 10.0309L8.75053 18.4731C8.60987 18.6137 8.53086 18.8045 8.53086 19.0034C8.53086 19.2023 8.60987 19.3931 8.75053 19.5337C8.89118 19.6744 9.08194 19.7534 9.28086 19.7534C9.47977 19.7534 9.67053 19.6744 9.81119 19.5337L18.254 11.0909L18.254 17.2356C18.2505 17.3363 18.2672 17.4366 18.3033 17.5307C18.3394 17.6247 18.394 17.7105 18.464 17.783C18.5339 17.8554 18.6178 17.9131 18.7105 17.9524C18.8032 17.9918 18.9029 18.0121 19.0036 18.0121C19.1043 18.0121 19.204 17.9918 19.2967 17.9524C19.3894 17.9131 19.4732 17.8554 19.5432 17.783C19.6131 17.7105 19.6678 17.6247 19.7038 17.5307C19.7399 17.4366 19.7567 17.3363 19.7531 17.2356V9.28068C19.7534 9.18216 19.7343 9.08454 19.6967 8.99345C19.6592 8.90236 19.604 8.8196 19.5343 8.74993C19.4647 8.68027 19.3819 8.62507 19.2908 8.58752C19.1997 8.54997 19.1021 8.53081 19.0036 8.53115L11.0486 8.53115Z" fill="currentColor" />
+                      </svg>
+                    </span>
+                  </a>
+
+                  <a href="#" class="custom__btn custom__btn--white custom__shadow--white-btn w-full md:w-fit">
+                    TALK TO AN EXPERT
+                    <span class="custom__btn-icon hidden md:flex">
+                      <svg class="w-[29px] h-[29px] text-inherit" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.0486 8.53115C10.948 8.52759 10.8476 8.54435 10.7536 8.58042C10.6596 8.61649 10.5737 8.67113 10.5013 8.74108C10.4288 8.81103 10.3712 8.89486 10.3318 8.98757C10.2925 9.08028 10.2722 9.17996 10.2722 9.28068C10.2722 9.3814 10.2925 9.48109 10.3318 9.57379C10.3712 9.6665 10.4288 9.75033 10.5013 9.82028C10.5737 9.89024 10.6595 9.94487 10.7536 9.98094C10.8476 10.017 10.948 10.0338 11.0486 10.0302L17.1927 10.0309L8.75053 18.4731C8.60987 18.6137 8.53086 18.8045 8.53086 19.0034C8.53086 19.2023 8.60987 19.3931 8.75053 19.5337C8.89118 19.6744 9.08194 19.7534 9.28086 19.7534C9.47977 19.7534 9.67053 19.6744 9.81119 19.5337L18.254 11.0909L18.254 17.2356C18.2505 17.3363 18.2672 17.4366 18.3033 17.5307C18.3394 17.6247 18.394 17.7105 18.464 17.783C18.5339 17.8554 18.6178 17.9131 18.7105 17.9524C18.8032 17.9918 18.9029 18.0121 19.0036 18.0121C19.1043 18.0121 19.204 17.9918 19.2967 17.9524C19.3894 17.9131 19.4732 17.8554 19.5432 17.783C19.6131 17.7105 19.6678 17.6247 19.7038 17.5307C19.7399 17.4366 19.7567 17.3363 19.7531 17.2356V9.28068C19.7534 9.18216 19.7343 9.08454 19.6967 8.99345C19.6592 8.90236 19.604 8.8196 19.5343 8.74993C19.4647 8.68027 19.3819 8.62507 19.2908 8.58752C19.1997 8.54997 19.1021 8.53081 19.0036 8.53115L11.0486 8.53115Z" fill="currentColor"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+
+                <p class="text-font-12 font-normal text-custom-gray-500 mt-8 max-w-58 text-center xl:text-left mx-auto xl:mx-0">
+                  Start scraping today with 1000 free credits. No Credit Card Required
+                </p>
+              </div>
+              <div class="flex-1 w-full lg:max-w-132 mt-10 xl:mt-0 justify-center lg:justify-start mx-auto xl:mx-0">
+                <img src="images/Asynchronous-hero.svg" alt="Asynchronous hero image" class="max-w-130 xl:w-full mx-auto xl:mx-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero Area -->
+
+      <!-- Proxy Card Area -->
+      <section class="pt-[50px] xl:pt-[70px] lg:pb-[60px]">
+        <div class="wrapper">
+            <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6">
+                <div class="proxy__card border border-custom-gray-100 p-8 rounded-2xl h-full transition duration-300 ease-in hover:bg-white">
+                  <div>
+                      <span class="w-[56px] h-[56px] flex justify-center items-center border border-custom-gray-100 rounded-[18px] bg-white mb-7 custom__shadow">
+                          <img class="max-w-6 max-h-6" src="images/mask.svg" alt="">
+                      </span>
+                      <h4 class="text-font-24 mb-4 font-normal">One Request, Thousands of Targets</h4>
+                      <div class="text-font-14 space-y-2">
+                        <p>Send a full list of URLs in a single API call. Scrape.do splits, queues, and distributes them efficiently behind the scenes.</p>
+                        <p><b>No threads, no scheduler, no infrastructure to build.</b></p>
+                      </div>
+                  </div>
+                </div>
+                <div class="proxy__card border border-custom-gray-100 p-8 rounded-2xl h-full transition duration-300 ease-in hover:bg-white">
+                  <div>
+                      <span class="w-[56px] h-[56px] flex justify-center items-center border border-custom-gray-100 rounded-[18px] bg-white mb-7 custom__shadow">
+                        <img class="max-w-6 max-h-6" src="images/message-programming.svg" alt="">
+                      </span>
+                      <h4 class="text-font-24 mb-4 font-normal">Status URLs for Easy Result <br> Handling</h4>
+                      <div class="text-font-14 space-y-2">
+                        <p>For each submitted URL set, the API returns a unique <b>status URL</b> that you can check for results. </p>
+                        <p>This makes the entire flow fully asynchronous, <b>perfect for background processing and large-scale scraping pipelines.</b></p>
+                      </div>
+                  </div>
+                </div>
+                <div class="proxy__card border border-custom-gray-100 p-8 rounded-2xl h-full transition duration-300 ease-in hover:bg-white">
+                  <div>
+                      <span class="w-[56px] h-[56px] flex justify-center items-center border border-custom-gray-100 rounded-[18px] bg-white mb-7 custom__shadow">
+                        <img class="max-w-6 max-h-6" src="images/minus-cirlce.svg" alt="">
+                      </span>
+                      <h4 class="text-font-24 mb-4 font-normal">No Queues. No Throttling. <br> No Headaches.</h4>
+                      <div class="text-font-14 space-y-2">
+                        <p>Forget managing concurrency, retries, or scraping logic at scale. </p>
+                        <p>Scrape.do handles the operational complexity, <b>freeing up developers to focus on data, not infrastructure.</b></p>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- Proxy Card Area -->
+
+
+
+      <!-- Web Scraping Timeline Area
+      <section class="lg:py-[120px]">
+        <div class="wrapper">
+          <div class="text-center mb-8">
+            <div class="w-14 h-14 rounded border border-custom-gray-100 flex items-center justify-center mx-auto mb-5">
+              <div class="relative">
+                <h4 class="text-font-20">API</h4>
+                <p class="text-font-13 absolute -right-1.5 top-4">1</p>
+              </div>
+            </div>
+            <h2 class="section__heading tracking-tight">
+              Web Scraping API <br> Top Features
+            </h2>
+          </div>
+        </div>
+      </section>
+      End Web Scraping Timeline Area -->
+
+
+
+      <!-- Web Scraping CTA Area -->
+      <section class="hidden md:block pt-20">
+        <div class="wrapper">
+          <div class="card__outline border-0 md:border md:pt-18 md:pb-22">
+            <div class="w-full max-w-[610px] mx-auto text-center">
+              <h2 class="section__heading tracking-tight">
+                Reliable, Scalable,<span class="block">Unstoppable Web Scraping</span>
+              </h2>
+
+              <div class="flex flex-col md:flex-row md:items-center md:justify-center gap-4 md:gap-6 mt-6">
+                <a href="#" class="custom__btn w-full md:w-fit">
+                  START SCRAPING FOR FREE
+                  <span class="custom__btn-icon hidden md:flex">
+                    <svg class="w-[16px] h-[10px] text-inherit" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.1398 0.941847C11.8709 0.675256 11.4367 0.677193 11.1701 0.946173C10.9035 1.21515 10.9055 1.64932 11.1744 1.91591L12.7863 3.51345C13.4405 4.1618 13.8892 4.60801 14.1928 4.98609C14.2915 5.10896 14.3685 5.21713 14.4283 5.31459L0.685714 5.31459C0.307005 5.31459 0 5.6216 0 6.00031C0 6.37902 0.307005 6.68602 0.685714 6.68602L14.4283 6.68602C14.3685 6.78348 14.2915 6.89165 14.1928 7.01452C13.8892 7.3926 13.4405 7.83881 12.7863 8.48716L11.1744 10.0847C10.9055 10.3513 10.9035 10.7855 11.1701 11.0544C11.4367 11.3234 11.8709 11.3254 12.1398 11.0588L13.7808 9.43244C14.3988 8.81992 14.9039 8.31931 15.2621 7.87326C15.6346 7.40942 15.9043 6.93862 15.9763 6.37348C15.9921 6.24959 16 6.12495 16 6.00031C16 5.87567 15.9921 5.75103 15.9763 5.62713C15.9043 5.062 15.6346 4.5912 15.2621 4.12736C14.9039 3.6813 14.3988 3.18068 13.7807 2.56816L12.1398 0.941847Z" fill="currentColor" />
+                    </svg>
+                  </span>
+                </a>
+
+                <a href="#" class="custom__btn custom__btn--white custom__btn--outline w-full md:w-fit">
+                  TALK TO AN EXPERT
+                  <span class="custom__btn-icon hidden md:flex">
+                    <svg class="w-[16px] h-[10px] text-inherit" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.1398 0.941847C11.8709 0.675256 11.4367 0.677193 11.1701 0.946173C10.9035 1.21515 10.9055 1.64932 11.1744 1.91591L12.7863 3.51345C13.4405 4.1618 13.8892 4.60801 14.1928 4.98609C14.2915 5.10896 14.3685 5.21713 14.4283 5.31459L0.685714 5.31459C0.307005 5.31459 0 5.6216 0 6.00031C0 6.37902 0.307005 6.68602 0.685714 6.68602L14.4283 6.68602C14.3685 6.78348 14.2915 6.89165 14.1928 7.01452C13.8892 7.3926 13.4405 7.83881 12.7863 8.48716L11.1744 10.0847C10.9055 10.3513 10.9035 10.7855 11.1701 11.0544C11.4367 11.3234 11.8709 11.3254 12.1398 11.0588L13.7808 9.43244C14.3988 8.81992 14.9039 8.31931 15.2621 7.87326C15.6346 7.40942 15.9043 6.93862 15.9763 6.37348C15.9921 6.24959 16 6.12495 16 6.00031C16 5.87567 15.9921 5.75103 15.9763 5.62713C15.9043 5.062 15.6346 4.5912 15.2621 4.12736C14.9039 3.6813 14.3988 3.18068 13.7807 2.56816L12.1398 0.941847Z" fill="currentColor" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Web Scraping CTA Area -->
+
+      <!-- FAQ Area -->
+      <section class="md:pt-7 pb-20 md:pb-[172px] bg-custom-white-400 rounded-[32px] md:rounded-[56px] relative -bottom-18">
+        <div class="wrapper">
+          <div class="w-full max-w-[1005px] mx-auto flex flex-col lg:flex-row lg:items-start gap-10 lg:gap-[118px]">
+            <div class="w-full max-w-[322px]">
+              <h3 class="text-font-16 text-custom-gray-500">F.A.Q</h3>
+
+              <h2 class="text-font-40 tracking-tight mt-1 md:mt-3">
+                Frequently Asked Questions.
+              </h2>
+
+              <p class="text-font-16 font-normal max-w-[300px] mt-2 md:mt-4">
+                Get answers to commonly asked questions.
+              </p>
+            </div>
+
+            <div class="flex-1">
+              <div class="custom__accodion custom__accodion--faq">
+                <!-- Accordion Item -->
+                <div class="accordion__item">
+                  <button class="accordion__button">
+                    <span class="text-font-16 font-normal">Can I cancel anytime?</span>
+
+                    <div class="accordion__icon">
+                      <img class="accordion__icon-plus" src="images/faq-plus.svg" alt="plus" />
+                      <img class="accordion__icon-minus" src="images/faq-minus.svg" alt="minus" />
+                    </div>
+                  </button>
+
+                  <div class="accordion__content">
+                    <div class="space-y-4 pt-3 pb-2">
+                      <p>
+                        Though it’s rare, we do offer refunds within the first
+                        three days of purchase. Just make sure to review our
+                        refunds policy for details.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Accordion Item -->
+
+                <!-- Accordion Item -->
+                <div class="accordion__item">
+                  <button class="accordion__button">
+                    <span class="text-font-16 font-normal">Do you have a free trial ?</span>
+
+                    <div class="accordion__icon">
+                      <img class="accordion__icon-plus" src="images/faq-plus.svg" alt="plus" />
+                      <img class="accordion__icon-minus" src="images/faq-minus.svg" alt="minus" />
+                    </div>
+                  </button>
+
+                  <div class="accordion__content">
+                    <div class="space-y-4 pt-3 pb-2">
+                      <p>
+                        Though it’s rare, we do offer refunds within the first
+                        three days of purchase. Just make sure to review our
+                        refunds policy for details.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Accordion Item -->
+
+                <!-- Accordion Item -->
+                <div class="accordion__item">
+                  <button class="accordion__button">
+                    <span class="text-font-16 font-normal">Can I get a refund if I'm not satisfied?</span>
+
+                    <div class="accordion__icon">
+                      <img class="accordion__icon-plus" src="images/faq-plus.svg" alt="plus" />
+                      <img class="accordion__icon-minus" src="images/faq-minus.svg" alt="minus" />
+                    </div>
+                  </button>
+
+                  <div class="accordion__content">
+                    <div class="space-y-4 pt-3 pb-2">
+                      <p>
+                        Though it’s rare, we do offer refunds within the first
+                        three days of purchase. Just make sure to review our
+                        refunds policy for details.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Accordion Item -->
+
+                <!-- Accordion Item -->
+                <div class="accordion__item">
+                  <button class="accordion__button">
+                    <span class="text-font-16 font-normal">Do I need a credit card to start the free trial?</span>
+
+                    <div class="accordion__icon">
+                      <img class="accordion__icon-plus" src="images/faq-plus.svg" alt="plus" />
+                      <img class="accordion__icon-minus" src="images/faq-minus.svg" alt="minus" />
+                    </div>
+                  </button>
+
+                  <div class="accordion__content">
+                    <div class="space-y-4 pt-3 pb-2">
+                      <p>
+                        Though it’s rare, we do offer refunds within the first
+                        three days of purchase. Just make sure to review our
+                        refunds policy for details.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Accordion Item -->
+
+                <!-- Accordion Item -->
+                <div class="accordion__item">
+                  <button class="accordion__button">
+                    <span class="text-font-16 font-normal">Do I get charged for the failed requests?</span>
+
+                    <div class="accordion__icon">
+                      <img class="accordion__icon-plus" src="images/faq-plus.svg" alt="plus" />
+                      <img class="accordion__icon-minus" src="images/faq-minus.svg" alt="minus" />
+                    </div>
+                  </button>
+
+                  <div class="accordion__content">
+                    <div class="space-y-4 pt-3 pb-2">
+                      <p>
+                        Though it’s rare, we do offer refunds within the first
+                        three days of purchase. Just make sure to review our
+                        refunds policy for details.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Accordion Item -->
+
+                <!-- Accordion Item -->
+                <div class="accordion__item">
+                  <button class="accordion__button">
+                    <span class="text-font-16 font-normal">Can I see my usage data?</span>
+
+                    <div class="accordion__icon">
+                      <img class="accordion__icon-plus" src="images/faq-plus.svg" alt="plus" />
+                      <img class="accordion__icon-minus" src="images/faq-minus.svg" alt="minus" />
+                    </div>
+                  </button>
+
+                  <div class="accordion__content">
+                    <div class="space-y-4 pt-3 pb-2">
+                      <p>
+                        Though it’s rare, we do offer refunds within the first
+                        three days of purchase. Just make sure to review our
+                        refunds policy for details.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Accordion Item -->
+              </div>
+
+              <a href="#" class="custom__btn custom__btn--sm custom__shadow--black-btn gap-1.5 mt-5 min-w-[168px]">See More
+                <span class="font-inter text-custom-white/30">-</span>
+                <span class="text-custom-white/70">FAQs</span>
+
+                <img class="w-5" src="images/arrow-right-small.svg" alt="arrow right small" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ Area -->
+    </main>
+    <!-- Main content -->
+
+    <!-- Footer Area -->
+    <footer class="pt-[120px] md:pt-[170px] pb-12 md:pb-14.5 bg-custom-black">
+      <div class="wrapper">
+        <div class="flex flex-col xl:flex-row">
+          <div class="flex-1 border-l border-custom-gray-100/20 first-of-type:border-l-0 xl:px-6 xl:first-of-type:pl-0">
+            <div class="flex items-center justify-between xl:justify-start gap-8">
+              <a href="#" class="w-16">
+                <img src="images/footer-logo.svg" alt="footer logo" />
+              </a>
+
+              <ul class="flex items-center gap-2.5">
+                <li>
+                  <a href="#" class="w-10 h-10 border border-custom-gray-100 rounded-full flex items-center justify-center">
+                    <img class="w-4" src="images/x-twitter.svg" alt="x twitter" />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="w-10 h-10 border border-custom-gray-100 rounded-full flex items-center justify-center">
+                    <img class="w-4" src="images/linkedin.svg" alt="linkedin" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Only Mobile Accordions -->
+            <div class="custom__accodion custom__accodion--common custom__accodion--footer mt-12 xl:hidden">
+              <!-- Accordion Item -->
+              <div class="accordion__item">
+                <button class="accordion__button text-custom-white">
+                  <span class="text-font-16 font-normal">Company</span>
+
+                  <div class="accordion__icon">
+                    <img src="images/accordion-arrow.svg" alt="arrow" />
+                  </div>
+                </button>
+
+                <div class="accordion__content">
+                  <div class="space-y-4 pt-4">
+                    <ul class="space-y-3.5">
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Support</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Sales</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Blog</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Support</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Features</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Support</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Features</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion Item -->
+
+              <!-- Accordion Item -->
+              <div class="accordion__item">
+                <button class="accordion__button text-custom-white">
+                  <span class="text-font-16 font-normal">Terms of Use</span>
+
+                  <div class="accordion__icon">
+                    <img src="images/accordion-arrow.svg" alt="arrow" />
+                  </div>
+                </button>
+
+                <div class="accordion__content">
+                  <div class="space-y-4 pt-4">
+                    <ul class="space-y-3.5">
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Term of Use</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Privacy Policy</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Affiliate Program</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion Item -->
+
+              <!-- Accordion Item -->
+              <div class="accordion__item">
+                <button class="accordion__button text-custom-white">
+                  <span class="text-font-16 font-normal">Web Scraping</span>
+
+                  <div class="accordion__icon">
+                    <img src="images/accordion-arrow.svg" alt="arrow" />
+                  </div>
+                </button>
+
+                <div class="accordion__content">
+                  <div class="space-y-4 pt-4">
+                    <ul class="space-y-3.5">
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping is Legal?</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping Proxies</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Rotating Proxy</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Search Engine Scraping</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion Item -->
+
+              <!-- Accordion Item -->
+              <div class="accordion__item">
+                <button class="accordion__button text-custom-white">
+                  <span class="text-font-16 font-normal">Use Cases</span>
+
+                  <div class="accordion__icon">
+                    <img src="images/accordion-arrow.svg" alt="arrow" />
+                  </div>
+                </button>
+
+                <div class="accordion__content">
+                  <div class="space-y-4 pt-4">
+                    <ul class="space-y-3.5">
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Python</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in NodeJS</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Java</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in PHP</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Python</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in NodeJS</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Java</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in PHP</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Python</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in NodeJS</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Java</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in PHP</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion Item -->
+
+              <!-- Accordion Item -->
+              <div class="accordion__item">
+                <button class="accordion__button text-custom-white">
+                  <span class="text-font-16 font-normal">Use Cases</span>
+
+                  <div class="accordion__icon">
+                    <img src="images/accordion-arrow.svg" alt="arrow" />
+                  </div>
+                </button>
+
+                <div class="accordion__content">
+                  <div class="space-y-4 pt-4">
+                    <ul class="space-y-3.5">
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Python</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in NodeJS</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Java</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in PHP</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Python</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in NodeJS</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Java</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in PHP</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Python</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in NodeJS</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion Item -->
+            </div>
+            <!-- Only Mobile Accordions -->
+
+            <div class="xl:space-y-6 mt-8 xl:mt-12 w-full md:max-w-[305px] mx-auto xl:mx-0">
+              <div class="grid grid-cols-3 gap-0 border-b border-custom-gray-100/20 last-of-type:border-b-0 xl:border-b-0 pb-4.5 xl:pb-0">
+                <img class="w-fit h-[71px] object-contain" src="images/footer-badge-1.png" alt="footer badge" />
+                <img class="w-fit h-[71px] object-contain" src="images/footer-badge-2.png" alt="footer badge" />
+                <img class="w-fit h-[71px] object-contain" src="images/footer-badge-3.png" alt="footer badge" />
+              </div>
+
+              <div class="grid grid-cols-3 gap-0 border-b border-custom-gray-100/20 last-of-type:border-b-0 xl:border-b-0 pt-4.5 xl:pt-0">
+                <img class="w-fit h-[71px] object-contain" src="images/footer-badge-4.png" alt="footer badge" />
+                <img class="w-fit h-[71px] object-contain" src="images/footer-badge-5.png" alt="footer badge" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Only Desktop Items -->
+          <div class="hidden xl:block w-full max-w-[220px] border-l border-custom-gray-100/20 first-of-type:border-l-0 px-6 first-of-type:pl-0 space-y-17">
+            <div class="space-y-2.5">
+              <h3 class="text-font-14 text-custom-white">Company</h3>
+
+              <ul class="space-y-2.5">
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Support</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Sales</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Blog</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Support</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Features</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Support</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Features</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="space-y-2.5">
+              <h3 class="text-font-14 text-custom-white">Terms of Use</h3>
+
+              <ul class="space-y-2.5">
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Term of Use</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Affiliate Program</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="hidden xl:block w-full max-w-[240px] border-l border-custom-gray-100/20 first-of-type:border-l-0 px-6 first-of-type:pl-0">
+            <div class="space-y-2.5">
+              <h3 class="text-font-14 text-custom-white">Web Scraping</h3>
+
+              <ul class="space-y-2.5">
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping is Legal?</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping Proxies</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Rotating Proxy</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Search Engine Scraping</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="hidden xl:block w-full max-w-[252px] border-l border-custom-gray-100/20 first-of-type:border-l-0 px-6 first-of-type:pl-0">
+            <div class="space-y-2.5">
+              <h3 class="text-font-14 text-custom-white">Use Cases</h3>
+
+              <ul class="space-y-2.5">
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Python</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in NodeJS</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Java</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in PHP</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Python</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in NodeJS</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Java</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in PHP</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Python</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in NodeJS</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Java</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in PHP</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="hidden xl:block w-full max-w-[230px] border-l border-custom-gray-100/20 first-of-type:border-l-0 px-6 first-of-type:pl-0">
+            <div class="space-y-2.5">
+              <h3 class="text-font-14 text-custom-white">Use Cases</h3>
+
+              <ul class="space-y-2.5">
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Python</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in NodeJS</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Java</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in PHP</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Python</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in NodeJS</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Java</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in PHP</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in Python</a>
+                </li>
+                <li>
+                  <a href="#" class="text-custom-white/50 hover:underline">Web Scraping in NodeJS</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Only Desktop Items -->
+        </div>
+
+        <div class="mt-10 xl:mt-20 flex flex-col-reverse md:flex-row items-center md:justify-between gap-5 md:gap-4">
+          <p class="text-font-12 text-custom-gray-500">
+            Copyright © 2020 - 2025 Scrape.do | PACKEND, LLC
+          </p>
+
+          <ul class="flex items-center gap-4">
+            <li>
+              <a href="#" class="w-fit h-7">
+                <img src="images/mastercard.svg" alt="mastercard" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="w-fit h-7">
+                <img src="images/visa.svg" alt="visa" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Area -->
+
+    <!-- JS CDN Link -->
+    <script>
+      var copy = document.querySelector(".logosc-cslide").cloneNode(true);
+      document.querySelector(".logosc").appendChild(copy);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+
+</html>

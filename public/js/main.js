@@ -142,3 +142,73 @@ function Marquee(selector, speed) {
 }
 
 window.addEventListener("load", () => Marquee(".marquee", 0.4));
+
+
+
+// dropdown menu
+function initializeDropdown(dropdownToggleSelector, dropdownMenuSelector) {
+   const dropdownToggles = document.querySelectorAll(dropdownToggleSelector);
+
+   function toggleDropdownMenu(dropdownMenu) {
+      dropdownMenu.classList.toggle("active");
+   }
+
+   function closeAllDropdownMenus() {
+      document.querySelectorAll(dropdownMenuSelector).forEach((menu) => {
+         menu.classList.remove("active");
+      });
+   }
+
+   dropdownToggles.forEach((toggle) => {
+      const menuId = toggle.getAttribute("data-menu-id");
+      const dropdownMenu = document.getElementById(menuId);
+
+      if (!dropdownMenu) {
+         console.warn(`Dropdown menu with ID "${menuId}" not found.`);
+         return; // Skip if menu is not found
+      }
+
+      // Toggle menu on button click
+      toggle.addEventListener("click", (event) => {
+         event.stopPropagation();
+         if (dropdownMenu.classList.contains("active")) {
+            dropdownMenu.classList.remove("active");
+         } else {
+            closeAllDropdownMenus();
+            toggleDropdownMenu(dropdownMenu);
+         }
+      });
+
+      // Close menu on menu item click
+      const dropdownMenuItems = dropdownMenu.querySelectorAll(
+         ".dropdown-menu-item"
+      );
+      dropdownMenuItems.forEach((item) => {
+         item.addEventListener("click", () => {
+            dropdownMenu.classList.remove("active");
+         });
+      });
+
+      // Handle selectable items
+      const dropdownSelectableItems = dropdownMenu.querySelectorAll(
+         ".dropdown-menu-item.selectable"
+      );
+      dropdownSelectableItems.forEach((item) => {
+         item.addEventListener("click", () => {
+            toggle.textContent = item.textContent.trim();
+            dropdownMenu.classList.remove("active");
+         });
+      });
+
+      // Prevent menu click from closing the menu
+      dropdownMenu.addEventListener("click", (event) => {
+         event.stopPropagation();
+      });
+   });
+
+   // Close all menus when clicking outside
+   document.addEventListener("click", closeAllDropdownMenus);
+}
+
+// Initialize
+initializeDropdown(".dropdown-toggle", ".dropdown-menu");
