@@ -290,19 +290,58 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-// Initialize Nice Select on modal select elements
-function initializeNiceSelect() {
-  if (typeof $ !== "undefined" && $.fn.niceSelect) {
-    $("#meetingModal select").niceSelect();
-  }
+
+// copy function
+document.querySelectorAll(".copy-code-btn").forEach((button) => {
+   button.addEventListener("click", () => {
+      const codeBlock = button
+         .closest(".code-block-container")
+         .querySelector(".code-block");
+      if (!codeBlock) return;
+
+      const text = codeBlock.innerText.trim();
+      navigator.clipboard.writeText(text).then(() => {
+         const span = button.querySelector("span");
+         const originalText = span.textContent;
+         span.textContent = "Copied";
+         setTimeout(() => {
+            span.textContent = originalText;
+         }, 2000);
+      });
+   });
+});
+
+
+// blog navigation 
+function initializeAllBlogNavs(containerSelector) {
+   const containers = document.querySelectorAll(containerSelector);
+
+   containers.forEach((container) => {
+      const items = container.querySelectorAll(".blog-nav__item");
+
+      items.forEach((item, index) => {
+         const link = item.querySelector(".blog-nav__link");
+         if (!link) return;
+
+         link.addEventListener("click", function (e) {
+            e.preventDefault(); 
+
+            items.forEach((i) => i.classList.remove("active", "above-active"));
+
+            for (let i = 0; i < index; i++) {
+               items[i].classList.add("above-active");
+            }
+
+            // Set "active" on the clicked item
+            items[index].classList.add("active");
+         });
+      });
+   });
 }
 
-// Initialize nice-select when modal opens
-function openModal() {
-  document.getElementById("meetingModal").classList.remove("hidden");
-  document.body.style.overflow = "hidden";
+// Initialize all blog-nav sections on the page
+initializeAllBlogNavs(".blog-nav");
 
-  setTimeout(function () {
-    initializeNiceSelect();
-  }, 100);
-}
+
+
+
