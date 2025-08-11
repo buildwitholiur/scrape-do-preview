@@ -116,6 +116,9 @@
   .nav__link {
     @apply font-inter p-3 rounded-[10px] text-font-15 leading-none font-normal h-10 flex items-center justify-center gap-1 custom-transition hover:bg-custom-gray-200;
   }
+  .nav__link:hover .arrow-icon {
+    @apply rotate-180;
+  }
 
   .nav__link--active {
     @apply bg-custom-gray-200;
@@ -142,15 +145,15 @@
   }
 
   .custom__btn {
-    @apply flex items-center justify-center gap-4 w-fit h-16 p-4 pl-8 rounded-[18px] bg-custom-black-400 text-custom-white font-normal text-font-14 leading-none uppercase custom-transition hover:bg-custom-black-400/95;
+    @apply flex items-center justify-center gap-4 w-fit h-16 p-4 pl-8 rounded-[18px] bg-custom-black-400 text-custom-white font-normal text-font-14 leading-none uppercase custom-transition;
   }
 
   .custom__btn--white {
-    @apply bg-custom-white text-custom-black-400 hover:bg-custom-white-400;
+    @apply bg-custom-white text-custom-black-400;
   }
 
   .custom__btn--outline {
-    @apply bg-transparent border border-custom-black-400 hover:bg-custom-white hover:border-transparent;
+    @apply bg-transparent border border-custom-black-400;
   }
 
   .custom__btn-icon {
@@ -358,10 +361,10 @@
 }
 
 .tab-btn.active {
-  background: #2e2e2e;
-  color: #fff;
+	background: #2e2e2e;
+	color: #fff;
+	border-color: #2e2e2e;
 }
-
 .tab-btn.active span {
   border-color: #f9d94a;
 }
